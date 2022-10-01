@@ -1,0 +1,19 @@
+# callstacks file version: 8
+#    rowid	    parent	       rva	 loop	 system	                                function	binary	instance_start_rva	instance_size	instance_end_rva	finst_rowid	roi	is_inlined	jit_method_id	tripcounts_roi	flops_roi	cachesim_roi	data_transfer_roi	projection_roi
+         1	        -1	      5312	    0	      0	                                  _start	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt3/alg1opt3.out	5312	43	0	1	0	0	0	0	0	0	0	0
+         2	        -1	      5353	    0	      0	                                  _start	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt3/alg1opt3.out	5312	43	0	1	0	0	0	0	0	0	0	0
+         3	         2	    138374	    0	      1	                       __libc_start_main	/lib/x86_64-linux-gnu/libc.so.6	138144	446	0	8	0	0	0	0	0	0	0	0
+         4	         3	      4669	    0	      0	                                    main	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt3/alg1opt3.out	4128	1143	0	2	0	0	0	0	0	0	0	0
+         5	        10	    133265	    1	      0	          [Loop@0x20810 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt3/alg1opt3.out	133136	195	133331	3	0	0	0	0	0	0	0	0
+         6	        12	    132606	    1	      0	        [Loop@0x20570 in l2norm_opt_ptr]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt3/alg1opt3.out	132464	148	132612	6	0	0	0	0	0	0	0	0
+         7	        10	    133173	    1	      0	          [Loop@0x20810 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt3/alg1opt3.out	133136	195	133331	3	0	0	0	0	0	0	0	0
+         8	        15	    132552	    1	      0	        [Loop@0x20570 in l2norm_opt_ptr]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt3/alg1opt3.out	132464	148	132612	6	0	0	0	0	0	0	0	0
+         9	         4	    133056	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt3/alg1opt3.out	132720	1352	0	4	0	0	0	0	0	0	0	0
+        10	         9	    133136	    1	      0	          [Loop@0x207c0 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt3/alg1opt3.out	133056,133888,134024	754,133,48	133810	5	0	0	0	0	0	0	0	0
+        11	         4	    133265	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt3/alg1opt3.out	132720	1352	0	4	0	0	0	0	0	0	0	0
+        12	         5	    132464	    0	      0	                          l2norm_opt_ptr	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt3/alg1opt3.out	132336	374	0	7	0	0	0	0	0	0	0	0
+        13	         5	    132606	    0	      0	                          l2norm_opt_ptr	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt3/alg1opt3.out	132336	374	0	7	0	0	0	0	0	0	0	0
+        14	         4	    133173	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt3/alg1opt3.out	132720	1352	0	4	0	0	0	0	0	0	0	0
+        15	         7	    132464	    0	      0	                          l2norm_opt_ptr	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt3/alg1opt3.out	132336	374	0	7	0	0	0	0	0	0	0	0
+        16	         7	    132552	    0	      0	                          l2norm_opt_ptr	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt3/alg1opt3.out	132336	374	0	7	0	0	0	0	0	0	0	0
+        17	        -1	         0	    0	      0	                [Unknown stack frame(s)]	n/a	0	0	0	10	0	0	0	0	0	0	0	0

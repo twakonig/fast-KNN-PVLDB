@@ -1,0 +1,662 @@
+# callstacks file version: 8
+#    rowid	    parent	       rva	 loop	 system	                                function	binary	instance_start_rva	instance_size	instance_end_rva	finst_rowid	roi	is_inlined	jit_method_id	tripcounts_roi	flops_roi	cachesim_roi	data_transfer_roi	projection_roi
+         1	        -1	      5136	    0	      0	                                  _start	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	5136	43	0	1	0	0	0	0	0	0	0	0
+         2	        -1	      5177	    0	      0	                                  _start	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	5136	43	0	1	0	0	0	0	0	0	0	0
+         3	         2	    138374	    0	      1	                       __libc_start_main	/lib/x86_64-linux-gnu/libc.so.6	138144	446	0	26	0	0	0	0	0	0	0	0
+         4	         3	      4890	    0	      0	                                    main	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	4000	1128	0	2	0	0	0	0	0	0	0	0
+         5	       380	      6735	    1	      0	    [Loop@0x1a10 in initialize_rand_mat]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	6672	65	6737	3	0	0	0	0	0	0	0	0
+         6	       380	      6681	    1	      0	    [Loop@0x1a10 in initialize_rand_mat]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	6672	65	6737	3	0	0	0	0	0	0	0	0
+         7	       380	      6676	    1	      0	    [Loop@0x1a10 in initialize_rand_mat]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	6672	65	6737	3	0	0	0	0	0	0	0	0
+         8	         7	    279448	    0	      1	                                    rand	/lib/x86_64-linux-gnu/libc.so.6	279440	14	0	27	0	0	0	0	0	0	0	0
+         9	         8	    278075	    0	      1	                                __random	/lib/x86_64-linux-gnu/libc.so.6	277904	183	0	28	0	0	0	0	0	0	0	0
+        10	       380	      6730	    1	      0	    [Loop@0x1a10 in initialize_rand_mat]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	6672	65	6737	3	0	0	0	0	0	0	0	0
+        11	         8	    278001	    0	      1	                                __random	/lib/x86_64-linux-gnu/libc.so.6	277904	183	0	28	0	0	0	0	0	0	0	0
+        12	        11	    279334	    0	      1	                              __random_r	/lib/x86_64-linux-gnu/libc.so.6	279280	148	0	29	0	0	0	0	0	0	0	0
+        13	         8	    277904	    0	      1	                                __random	/lib/x86_64-linux-gnu/libc.so.6	277904	183	0	28	0	0	0	0	0	0	0	0
+        14	        11	    279312	    0	      1	                              __random_r	/lib/x86_64-linux-gnu/libc.so.6	279280	148	0	29	0	0	0	0	0	0	0	0
+        15	         8	    277950	    0	      1	                                __random	/lib/x86_64-linux-gnu/libc.so.6	277904	183	0	28	0	0	0	0	0	0	0	0
+        16	         3	      4909	    0	      0	                                    main	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	4000	1128	0	2	0	0	0	0	0	0	0	0
+        17	       386	      6676	    1	      0	    [Loop@0x1a10 in initialize_rand_mat]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	6672	65	6737	3	0	0	0	0	0	0	0	0
+        18	        17	    279448	    0	      1	                                    rand	/lib/x86_64-linux-gnu/libc.so.6	279440	14	0	27	0	0	0	0	0	0	0	0
+        19	        18	    278001	    0	      1	                                __random	/lib/x86_64-linux-gnu/libc.so.6	277904	183	0	28	0	0	0	0	0	0	0	0
+        20	        19	    279329	    0	      1	                              __random_r	/lib/x86_64-linux-gnu/libc.so.6	279280	148	0	29	0	0	0	0	0	0	0	0
+        21	        17	    279440	    0	      1	                                    rand	/lib/x86_64-linux-gnu/libc.so.6	279440	14	0	27	0	0	0	0	0	0	0	0
+        22	        19	    279334	    0	      1	                              __random_r	/lib/x86_64-linux-gnu/libc.so.6	279280	148	0	29	0	0	0	0	0	0	0	0
+        23	        19	    279343	    0	      1	                              __random_r	/lib/x86_64-linux-gnu/libc.so.6	279280	148	0	29	0	0	0	0	0	0	0	0
+        24	       386	      6703	    1	      0	    [Loop@0x1a10 in initialize_rand_mat]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	6672	65	6737	3	0	0	0	0	0	0	0	0
+        25	        19	    279314	    0	      1	                              __random_r	/lib/x86_64-linux-gnu/libc.so.6	279280	148	0	29	0	0	0	0	0	0	0	0
+        26	       386	      6716	    1	      0	    [Loop@0x1a10 in initialize_rand_mat]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	6672	65	6737	3	0	0	0	0	0	0	0	0
+        27	       386	      6730	    1	      0	    [Loop@0x1a10 in initialize_rand_mat]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	6672	65	6737	3	0	0	0	0	0	0	0	0
+        28	       386	      6735	    1	      0	    [Loop@0x1a10 in initialize_rand_mat]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	6672	65	6737	3	0	0	0	0	0	0	0	0
+        29	        18	    277904	    0	      1	                                __random	/lib/x86_64-linux-gnu/libc.so.6	277904	183	0	28	0	0	0	0	0	0	0	0
+        30	        18	    278075	    0	      1	                                __random	/lib/x86_64-linux-gnu/libc.so.6	277904	183	0	28	0	0	0	0	0	0	0	0
+        31	       386	      6686	    1	      0	    [Loop@0x1a10 in initialize_rand_mat]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	6672	65	6737	3	0	0	0	0	0	0	0	0
+        32	       393	      4500	    1	      0	                   [Loop@0x1188 in main]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	4488	28	4516	6	0	0	0	0	0	0	0	0
+        33	        32	   1633773	    0	      1	                      __memset_avx2_erms	/lib/x86_64-linux-gnu/libc.so.6	1633760	19	0	30	0	0	0	0	0	0	0	0
+        34	         3	      4544	    0	      0	                                    main	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	4000	1128	0	2	0	0	0	0	0	0	0	0
+        35	       396	     10802	    1	      0	           [Loop@0x29e0 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10720	105	10825	7	0	0	0	0	0	0	0	0
+        36	       398	      8164	    1	      0	             [Loop@0x1f50 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8016	162	8178	10	0	0	0	0	0	0	0	0
+        37	       398	      8016	    1	      0	             [Loop@0x1f50 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8016	162	8178	10	0	0	0	0	0	0	0	0
+        38	       398	      8144	    1	      0	             [Loop@0x1f50 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8016	162	8178	10	0	0	0	0	0	0	0	0
+        39	       402	     10776	    1	      0	           [Loop@0x2a08 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10760	30	10790	12	0	0	0	0	0	0	0	0
+        40	       398	      8156	    1	      0	             [Loop@0x1f50 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8016	162	8178	10	0	0	0	0	0	0	0	0
+        41	       398	      8168	    1	      0	             [Loop@0x1f50 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8016	162	8178	10	0	0	0	0	0	0	0	0
+        42	       402	     10785	    1	      0	           [Loop@0x2a08 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10760	30	10790	12	0	0	0	0	0	0	0	0
+        43	       398	      8160	    1	      0	             [Loop@0x1f50 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8016	162	8178	10	0	0	0	0	0	0	0	0
+        44	       398	      8127	    1	      0	             [Loop@0x1f50 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8016	162	8178	10	0	0	0	0	0	0	0	0
+        45	       402	     10770	    1	      0	           [Loop@0x2a08 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10760	30	10790	12	0	0	0	0	0	0	0	0
+        46	       402	     10781	    1	      0	           [Loop@0x2a08 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10760	30	10790	12	0	0	0	0	0	0	0	0
+        47	       402	     10760	    1	      0	           [Loop@0x2a08 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10760	30	10790	12	0	0	0	0	0	0	0	0
+        48	       398	      8172	    1	      0	             [Loop@0x1f50 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8016	162	8178	10	0	0	0	0	0	0	0	0
+        49	       398	      8139	    1	      0	             [Loop@0x1f50 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8016	162	8178	10	0	0	0	0	0	0	0	0
+        50	       395	     11614	    1	      0	           [Loop@0x2990 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10640,11040	360,626	11000	9	0	0	0	0	0	0	0	0
+        51	        50	      9127	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+        52	        51	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+        53	        52	      9212	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+        54	        53	      8280	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+        55	       402	     10765	    1	      0	           [Loop@0x2a08 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10760	30	10790	12	0	0	0	0	0	0	0	0
+        56	       417	      8585	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+        57	       398	      8152	    1	      0	             [Loop@0x1f50 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8016	162	8178	10	0	0	0	0	0	0	0	0
+        58	       398	      8048	    1	      0	             [Loop@0x1f50 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8016	162	8178	10	0	0	0	0	0	0	0	0
+        59	       398	      8123	    1	      0	             [Loop@0x1f50 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8016	162	8178	10	0	0	0	0	0	0	0	0
+        60	       398	      8092	    1	      0	             [Loop@0x1f50 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8016	162	8178	10	0	0	0	0	0	0	0	0
+        61	       398	      8088	    1	      0	             [Loop@0x1f50 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8016	162	8178	10	0	0	0	0	0	0	0	0
+        62	       395	     11275	    1	      0	           [Loop@0x2990 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10640,11040	360,626	11000	9	0	0	0	0	0	0	0	0
+        63	       425	      8630	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+        64	       396	     10798	    1	      0	           [Loop@0x29e0 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10720	105	10825	7	0	0	0	0	0	0	0	0
+        65	       398	      8053	    1	      0	             [Loop@0x1f50 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8016	162	8178	10	0	0	0	0	0	0	0	0
+        66	        35	      8178	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	7984	205	0	11	0	0	0	0	0	0	0	0
+        67	       398	      8102	    1	      0	             [Loop@0x1f50 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8016	162	8178	10	0	0	0	0	0	0	0	0
+        68	       395	     11527	    1	      0	           [Loop@0x2990 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10640,11040	360,626	11000	9	0	0	0	0	0	0	0	0
+        69	        68	      9127	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+        70	        69	      9127	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+        71	        70	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+        72	        71	      3728	    0	      0	                              func@0xe90	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	3728	6	0	17	0	0	0	0	0	0	0	0
+        73	       395	     10912	    1	      0	           [Loop@0x2990 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10640,11040	360,626	11000	9	0	0	0	0	0	0	0	0
+        74	       432	      8640	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+        75	       395	     11660	    1	      0	           [Loop@0x2990 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10640,11040	360,626	11000	9	0	0	0	0	0	0	0	0
+        76	        75	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+        77	        76	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+        78	        77	      9212	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+        79	        78	      9127	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+        80	        79	      8323	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+        81	       395	     11212	    1	      0	           [Loop@0x2990 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10640,11040	360,626	11000	9	0	0	0	0	0	0	0	0
+        82	       436	      8630	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+        83	       398	      8078	    1	      0	             [Loop@0x1f50 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8016	162	8178	10	0	0	0	0	0	0	0	0
+        84	       395	     11506	    1	      0	           [Loop@0x2990 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10640,11040	360,626	11000	9	0	0	0	0	0	0	0	0
+        85	        84	      9127	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+        86	        85	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+        87	        86	      9187	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+        88	        87	      9114	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+        89	       440	      8630	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+        90	       395	     11636	    1	      0	           [Loop@0x2990 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10640,11040	360,626	11000	9	0	0	0	0	0	0	0	0
+        91	        90	      9212	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+        92	        91	      9212	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+        93	        92	      9187	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+        94	       444	      8588	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+        95	        50	      9187	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+        96	       447	      8614	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+        97	       398	      8083	    1	      0	             [Loop@0x1f50 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8016	162	8178	10	0	0	0	0	0	0	0	0
+        98	        51	      9187	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+        99	        98	      9123	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       100	       395	     11549	    1	      0	           [Loop@0x2990 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10640,11040	360,626	11000	9	0	0	0	0	0	0	0	0
+       101	       100	      9127	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       102	       101	      9187	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       103	       102	      9127	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       104	       103	      9056	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       105	       452	      8585	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       106	       395	     11573	    1	      0	           [Loop@0x2990 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10640,11040	360,626	11000	9	0	0	0	0	0	0	0	0
+       107	       106	      9212	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       108	       107	      9127	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       109	       108	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       110	       109	      9056	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       111	       455	      8634	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       112	       398	      8020	    1	      0	             [Loop@0x1f50 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8016	162	8178	10	0	0	0	0	0	0	0	0
+       113	       458	      8579	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       114	       396	     10794	    1	      0	           [Loop@0x29e0 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10720	105	10825	7	0	0	0	0	0	0	0	0
+       115	       398	      8043	    1	      0	             [Loop@0x1f50 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8016	162	8178	10	0	0	0	0	0	0	0	0
+       116	       395	     11592	    1	      0	           [Loop@0x2990 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10640,11040	360,626	11000	9	0	0	0	0	0	0	0	0
+       117	       463	      8630	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       118	       395	     11137	    1	      0	           [Loop@0x2990 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10640,11040	360,626	11000	9	0	0	0	0	0	0	0	0
+       119	       467	      8600	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       120	       469	     10956	    1	      0	           [Loop@0x2ac8 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10952	15	10967	18	0	0	0	0	0	0	0	0
+       121	        69	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       122	       121	      9212	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       123	       472	      8585	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       124	       398	      8097	    1	      0	             [Loop@0x1f50 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8016	162	8178	10	0	0	0	0	0	0	0	0
+       125	       467	      8585	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       126	        85	      9212	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       127	       476	      8630	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       128	        90	      9056	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       129	       478	      8575	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       130	        84	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       131	       130	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       132	       131	      9187	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       133	       132	      9114	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       134	       133	      8365	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       135	       106	      9127	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       136	       135	      9127	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       137	       136	      9017	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       138	        95	      9187	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       139	       138	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       140	       480	      8634	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       141	       398	      8112	    1	      0	             [Loop@0x1f50 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8016	162	8178	10	0	0	0	0	0	0	0	0
+       142	       398	      8068	    1	      0	             [Loop@0x1f50 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8016	162	8178	10	0	0	0	0	0	0	0	0
+       143	        90	      9187	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       144	       484	      8652	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       145	        75	      9187	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       146	       145	      9187	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       147	       146	      9127	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       148	       147	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       149	       148	      8532	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       150	       398	      8038	    1	      0	             [Loop@0x1f50 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8016	162	8178	10	0	0	0	0	0	0	0	0
+       151	        75	      9212	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       152	       151	      9114	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       153	       488	      8604	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       154	       116	      9212	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       155	       490	      8671	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       156	       100	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       157	       156	      9127	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       158	       157	      9127	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       159	       158	      9212	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       160	       159	      8947	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       161	        84	      9212	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       162	       161	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       163	       162	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       164	       163	      9187	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       165	       164	      8471	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       166	       492	      8588	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       167	        69	      9212	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       168	       167	      9127	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       169	       494	      8630	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       170	       496	      8585	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       171	        85	      9127	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       172	       171	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       173	       172	      9114	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       174	       173	      8505	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       175	       174	   1632795	    0	      1	            __memmove_avx_unaligned_erms	/lib/x86_64-linux-gnu/libc.so.6	1632656	980	0	31	0	0	0	0	0	0	0	0
+       176	       498	      8634	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       177	        91	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       178	       177	      9212	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       179	       178	      8364	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       180	       179	   1632770	    0	      1	            __memmove_avx_unaligned_erms	/lib/x86_64-linux-gnu/libc.so.6	1632656	980	0	31	0	0	0	0	0	0	0	0
+       181	       432	      8575	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       182	       106	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       183	       502	      8585	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       184	        84	      9114	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       185	       505	      8585	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       186	       116	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       187	       186	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       188	       187	      9212	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       189	       507	      8871	    1	      0	                  [Loop@0x2253 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8787,8888	86,9	8873	19	0	0	0	0	0	0	0	0
+       190	       398	      8033	    1	      0	             [Loop@0x1f50 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8016	162	8178	10	0	0	0	0	0	0	0	0
+       191	       510	      8579	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       192	       116	      9187	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       193	       192	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       194	       193	      9127	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       195	       194	      9056	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       196	       513	      8585	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       197	        35	      8015	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	7984	205	0	11	0	0	0	0	0	0	0	0
+       198	       171	      9187	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       199	       198	      9056	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       200	       199	      8364	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       201	       200	   1632792	    0	      1	            __memmove_avx_unaligned_erms	/lib/x86_64-linux-gnu/libc.so.6	1632656	980	0	31	0	0	0	0	0	0	0	0
+       202	       101	      9114	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       203	       202	      8403	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       204	        35	      7994	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	7984	205	0	11	0	0	0	0	0	0	0	0
+       205	        68	      9187	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       206	       205	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       207	       206	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       208	       207	      9187	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       209	       208	      8364	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       210	       209	   1632808	    0	      1	            __memmove_avx_unaligned_erms	/lib/x86_64-linux-gnu/libc.so.6	1632656	980	0	31	0	0	0	0	0	0	0	0
+       211	       516	      8585	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       212	       106	      9114	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       213	       518	      8634	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       214	        50	      9212	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       215	       214	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       216	       215	      9187	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       217	       216	      9114	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       218	       521	      8581	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       219	       398	      8107	    1	      0	             [Loop@0x1f50 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8016	162	8178	10	0	0	0	0	0	0	0	0
+       220	        90	      9127	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       221	       525	      8617	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       222	       527	      8634	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       223	       466	      8579	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       224	       530	      8585	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       225	       100	      9212	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       226	       225	      9114	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       227	       226	      8696	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       228	       432	      8630	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       229	       220	      9187	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       230	       229	      9056	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       231	       533	      8634	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       232	       116	      9127	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       233	       232	      9127	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       234	       535	      8579	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       235	        50	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       236	       235	      9114	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       237	       537	      8640	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       238	       436	      8640	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       239	        75	      9127	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       240	       239	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       241	       240	      9187	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       242	       241	      9114	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       243	       541	      8585	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       244	       106	      9187	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       245	       244	      9212	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       246	       245	      9114	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       247	       543	      8634	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       248	       135	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       249	       248	      9127	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       250	       249	      9056	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       251	       546	      8835	    1	      0	                  [Loop@0x2280 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8832	26	8858	20	0	0	0	0	0	0	0	0
+       252	        84	      9187	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       253	       252	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       254	       549	      8604	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       255	       492	      8614	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       256	       182	      9212	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       257	       256	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       258	       257	      9127	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       259	       258	      8914	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       260	       469	     10963	    1	      0	           [Loop@0x2ac8 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10952	15	10967	18	0	0	0	0	0	0	0	0
+       261	       154	      9187	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       262	       261	      9056	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       263	       554	      8600	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       264	        90	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       265	       264	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       266	       557	      8588	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       267	       398	      8135	    1	      0	             [Loop@0x1f50 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8016	162	8178	10	0	0	0	0	0	0	0	0
+       268	       182	      9187	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       269	       268	      9212	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       270	       269	      8982	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       271	       478	      8634	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       272	       395	     11482	    1	      0	           [Loop@0x2990 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10640,11040	360,626	11000	9	0	0	0	0	0	0	0	0
+       273	       563	      8585	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       274	       252	      9212	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       275	       565	      8579	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       276	       563	      8600	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       277	       395	     11415	    1	      0	           [Loop@0x2990 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10640,11040	360,626	11000	9	0	0	0	0	0	0	0	0
+       278	       569	      8652	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       279	       572	      8585	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       280	       145	      9212	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       281	       280	      9187	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       282	       281	      9212	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       283	       282	      8196	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       284	       274	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       285	       284	      9127	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       286	       574	      8640	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       287	       107	      9056	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       288	       577	      8614	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       289	       579	      8581	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       290	       156	      9212	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       291	       290	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       292	       291	      9212	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       293	       292	      8947	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       294	       467	      8617	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       295	       582	      8662	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       296	       585	      8588	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       297	        51	      9212	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       298	       297	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       299	       298	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       300	       299	      8707	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       301	       214	      9056	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       302	       587	      8640	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       303	       589	      8617	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       304	       154	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       305	       591	      8630	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       306	       398	      8073	    1	      0	             [Loop@0x1f50 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8016	162	8178	10	0	0	0	0	0	0	0	0
+       307	       182	      9114	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       308	       594	      8634	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       309	       192	      9127	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       310	       309	      9212	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       311	       310	      9187	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       312	       596	      8640	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       313	       598	      8634	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       314	       432	      8652	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       315	       239	      9187	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       316	       315	      9056	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       317	       601	      8579	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       318	       151	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       319	       318	      8693	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       320	       396	     10790	    1	      0	           [Loop@0x29e0 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10720	105	10825	7	0	0	0	0	0	0	0	0
+       321	       604	      8588	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       322	        50	      9056	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       323	       606	      8579	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       324	       109	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       325	       324	      8475	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       326	       325	   1632656	    0	      1	            __memmove_avx_unaligned_erms	/lib/x86_64-linux-gnu/libc.so.6	1632656	980	0	31	0	0	0	0	0	0	0	0
+       327	       579	      8585	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       328	       609	      8630	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       329	       244	      9114	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       330	       612	      8585	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       331	       100	      9187	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       332	       331	      9187	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       333	       332	      9212	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       334	       615	      8585	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       335	       617	      8630	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       336	       530	      8614	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       337	       331	      9114	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       338	       620	      8630	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       339	       398	      8063	    1	      0	             [Loop@0x1f50 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8016	162	8178	10	0	0	0	0	0	0	0	0
+       340	        68	      9056	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       341	       624	      8614	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       342	       627	      8588	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       343	       629	      8640	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       344	       533	      8662	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       345	       102	      9187	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       346	       345	      9056	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       347	       346	      8505	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       348	       347	   1632795	    0	      1	            __memmove_avx_unaligned_erms	/lib/x86_64-linux-gnu/libc.so.6	1632656	980	0	31	0	0	0	0	0	0	0	0
+       349	        68	      9212	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       350	       349	      9212	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       351	       350	      9127	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       352	       632	      8640	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       353	       634	      8630	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       354	       107	      9187	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       355	       354	      9114	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       356	       355	      3728	    0	      0	                              func@0xe90	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	3728	6	0	17	0	0	0	0	0	0	0	0
+       357	       636	      8581	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       358	       638	      8600	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       359	       469	     10959	    1	      0	           [Loop@0x2ac8 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10952	15	10967	18	0	0	0	0	0	0	0	0
+       360	       463	      8634	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       361	       220	      9153	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       362	       361	      9056	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       363	       362	      8484	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       364	       642	      8662	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       365	       135	      9212	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       366	       365	      9212	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       367	       366	      9114	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       368	       645	      8585	    1	      0	                  [Loop@0x2185 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8581	49	8688,8630	15	0	0	0	0	0	0	0	0
+       369	       130	      9114	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8912	306	0	13	0	0	0	0	0	0	0	0
+       370	       647	      8630	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       371	       537	      8630	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       372	         3	      4577	    0	      0	                                    main	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	4000	1128	0	2	0	0	0	0	0	0	0	0
+       373	       651	     12000	    1	      0	[Loop@0x2e70 in compute_single_unweighted_knn_class_shapley]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	11888	114	12002	21	0	0	0	0	0	0	0	0
+       374	       651	     11983	    1	      0	[Loop@0x2e70 in compute_single_unweighted_knn_class_shapley]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	11888	114	12002	21	0	0	0	0	0	0	0	0
+       375	       651	     11995	    1	      0	[Loop@0x2e70 in compute_single_unweighted_knn_class_shapley]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	11888	114	12002	21	0	0	0	0	0	0	0	0
+       376	       651	     11990	    1	      0	[Loop@0x2e70 in compute_single_unweighted_knn_class_shapley]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	11888	114	12002	21	0	0	0	0	0	0	0	0
+       377	       657	      4695	    1	      0	                   [Loop@0x1250 in main]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	4688	14	4702	24	0	0	0	0	0	0	0	0
+       378	       657	      4698	    1	      0	                   [Loop@0x1250 in main]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	4688	14	4702	24	0	0	0	0	0	0	0	0
+       379	         4	      6664	    0	      0	                     initialize_rand_mat	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	6640	115	0	4	0	0	0	0	0	0	0	0
+       380	       379	      6672	    1	      0	    [Loop@0x1a08 in initialize_rand_mat]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	6664	84	6748	5	0	0	0	0	0	0	0	0
+       381	         4	      6735	    0	      0	                     initialize_rand_mat	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	6640	115	0	4	0	0	0	0	0	0	0	0
+       382	         4	      6681	    0	      0	                     initialize_rand_mat	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	6640	115	0	4	0	0	0	0	0	0	0	0
+       383	         4	      6676	    0	      0	                     initialize_rand_mat	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	6640	115	0	4	0	0	0	0	0	0	0	0
+       384	         4	      6730	    0	      0	                     initialize_rand_mat	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	6640	115	0	4	0	0	0	0	0	0	0	0
+       385	        16	      6664	    0	      0	                     initialize_rand_mat	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	6640	115	0	4	0	0	0	0	0	0	0	0
+       386	       385	      6672	    1	      0	    [Loop@0x1a08 in initialize_rand_mat]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	6664	84	6748	5	0	0	0	0	0	0	0	0
+       387	        16	      6676	    0	      0	                     initialize_rand_mat	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	6640	115	0	4	0	0	0	0	0	0	0	0
+       388	        16	      6703	    0	      0	                     initialize_rand_mat	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	6640	115	0	4	0	0	0	0	0	0	0	0
+       389	        16	      6716	    0	      0	                     initialize_rand_mat	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	6640	115	0	4	0	0	0	0	0	0	0	0
+       390	        16	      6730	    0	      0	                     initialize_rand_mat	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	6640	115	0	4	0	0	0	0	0	0	0	0
+       391	        16	      6735	    0	      0	                     initialize_rand_mat	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	6640	115	0	4	0	0	0	0	0	0	0	0
+       392	        16	      6686	    0	      0	                     initialize_rand_mat	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	6640	115	0	4	0	0	0	0	0	0	0	0
+       393	         3	      4488	    0	      0	                                    main	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	4000	1128	0	2	0	0	0	0	0	0	0	0
+       394	         3	      4500	    0	      0	                                    main	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	4000	1128	0	2	0	0	0	0	0	0	0	0
+       395	        34	     10640	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10288	1383	0	8	0	0	0	0	0	0	0	0
+       396	       395	     10720	    1	      0	           [Loop@0x2990 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10640,11040	360,626	11000	9	0	0	0	0	0	0	0	0
+       397	        34	     10802	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10288	1383	0	8	0	0	0	0	0	0	0	0
+       398	        35	      8016	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	7984	205	0	11	0	0	0	0	0	0	0	0
+       399	        35	      8164	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	7984	205	0	11	0	0	0	0	0	0	0	0
+       400	        35	      8016	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	7984	205	0	11	0	0	0	0	0	0	0	0
+       401	        35	      8144	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	7984	205	0	11	0	0	0	0	0	0	0	0
+       402	       396	     10760	    1	      0	           [Loop@0x29e0 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10720	105	10825	7	0	0	0	0	0	0	0	0
+       403	        34	     10776	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10288	1383	0	8	0	0	0	0	0	0	0	0
+       404	        35	      8156	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	7984	205	0	11	0	0	0	0	0	0	0	0
+       405	        35	      8168	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	7984	205	0	11	0	0	0	0	0	0	0	0
+       406	        34	     10785	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10288	1383	0	8	0	0	0	0	0	0	0	0
+       407	        35	      8160	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	7984	205	0	11	0	0	0	0	0	0	0	0
+       408	        35	      8127	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	7984	205	0	11	0	0	0	0	0	0	0	0
+       409	        34	     10770	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10288	1383	0	8	0	0	0	0	0	0	0	0
+       410	        34	     10781	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10288	1383	0	8	0	0	0	0	0	0	0	0
+       411	        34	     10760	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10288	1383	0	8	0	0	0	0	0	0	0	0
+       412	        35	      8172	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	7984	205	0	11	0	0	0	0	0	0	0	0
+       413	        35	      8139	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	7984	205	0	11	0	0	0	0	0	0	0	0
+       414	        34	     11614	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10288	1383	0	8	0	0	0	0	0	0	0	0
+       415	        34	     10765	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10288	1383	0	8	0	0	0	0	0	0	0	0
+       416	        50	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       417	       416	      8581	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       418	        50	      8585	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       419	        35	      8152	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	7984	205	0	11	0	0	0	0	0	0	0	0
+       420	        35	      8048	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	7984	205	0	11	0	0	0	0	0	0	0	0
+       421	        35	      8123	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	7984	205	0	11	0	0	0	0	0	0	0	0
+       422	        35	      8092	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	7984	205	0	11	0	0	0	0	0	0	0	0
+       423	        35	      8088	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	7984	205	0	11	0	0	0	0	0	0	0	0
+       424	        34	     11275	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10288	1383	0	8	0	0	0	0	0	0	0	0
+       425	        62	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       426	        62	      8630	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       427	        34	     10798	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10288	1383	0	8	0	0	0	0	0	0	0	0
+       428	        35	      8053	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	7984	205	0	11	0	0	0	0	0	0	0	0
+       429	        35	      8102	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	7984	205	0	11	0	0	0	0	0	0	0	0
+       430	        34	     11527	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10288	1383	0	8	0	0	0	0	0	0	0	0
+       431	        34	     10912	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10288	1383	0	8	0	0	0	0	0	0	0	0
+       432	        73	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       433	        73	      8640	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       434	        34	     11660	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10288	1383	0	8	0	0	0	0	0	0	0	0
+       435	        34	     11212	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10288	1383	0	8	0	0	0	0	0	0	0	0
+       436	        81	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       437	        81	      8630	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       438	        35	      8078	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	7984	205	0	11	0	0	0	0	0	0	0	0
+       439	        34	     11506	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10288	1383	0	8	0	0	0	0	0	0	0	0
+       440	        88	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       441	        88	      8630	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       442	        34	     11636	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10288	1383	0	8	0	0	0	0	0	0	0	0
+       443	        93	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       444	       443	      8581	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       445	        93	      8588	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       446	        95	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       447	       446	      8581	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       448	        95	      8614	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       449	        35	      8083	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	7984	205	0	11	0	0	0	0	0	0	0	0
+       450	        34	     11549	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10288	1383	0	8	0	0	0	0	0	0	0	0
+       451	       104	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       452	       451	      8581	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       453	       104	      8585	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       454	        34	     11573	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10288	1383	0	8	0	0	0	0	0	0	0	0
+       455	       110	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       456	       110	      8634	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       457	        35	      8020	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	7984	205	0	11	0	0	0	0	0	0	0	0
+       458	        53	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       459	        53	      8579	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       460	        34	     10794	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10288	1383	0	8	0	0	0	0	0	0	0	0
+       461	        35	      8043	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	7984	205	0	11	0	0	0	0	0	0	0	0
+       462	        34	     11592	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10288	1383	0	8	0	0	0	0	0	0	0	0
+       463	       116	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       464	       116	      8630	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       465	        34	     11137	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10288	1383	0	8	0	0	0	0	0	0	0	0
+       466	       118	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       467	       466	      8581	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       468	       118	      8600	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       469	       395	     10952	    1	      0	           [Loop@0x2990 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10640,11040	360,626	11000	9	0	0	0	0	0	0	0	0
+       470	        34	     10956	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10288	1383	0	8	0	0	0	0	0	0	0	0
+       471	       122	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       472	       471	      8581	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       473	       122	      8585	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       474	        35	      8097	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	7984	205	0	11	0	0	0	0	0	0	0	0
+       475	       118	      8585	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       476	       126	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       477	       126	      8630	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       478	       128	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       479	       128	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       480	       139	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       481	       139	      8634	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       482	        35	      8112	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	7984	205	0	11	0	0	0	0	0	0	0	0
+       483	        35	      8068	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	7984	205	0	11	0	0	0	0	0	0	0	0
+       484	       143	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       485	       143	      8652	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       486	        35	      8038	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	7984	205	0	11	0	0	0	0	0	0	0	0
+       487	       152	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       488	       487	      8581	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       489	       152	      8604	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       490	       154	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       491	       154	      8671	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       492	       436	      8581	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       493	        81	      8588	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       494	       168	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       495	       168	      8630	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       496	       478	      8581	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       497	       128	      8585	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       498	       106	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       499	       106	      8634	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       500	        73	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       501	       182	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       502	       501	      8581	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       503	       182	      8585	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       504	       184	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       505	       504	      8581	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       506	       184	      8585	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       507	       188	      8787	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       508	       188	      8871	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       509	        35	      8033	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	7984	205	0	11	0	0	0	0	0	0	0	0
+       510	       167	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       511	       167	      8579	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       512	       195	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       513	       512	      8581	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       514	       195	      8585	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       515	       100	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       516	       515	      8581	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       517	       100	      8585	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       518	       212	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       519	       212	      8634	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       520	       217	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       521	       520	      8581	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       522	       217	      8581	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       523	        35	      8107	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	7984	205	0	11	0	0	0	0	0	0	0	0
+       524	       220	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       525	       524	      8581	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       526	       220	      8617	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       527	       186	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       528	       186	      8634	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       529	       118	      8579	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       530	       425	      8581	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       531	        62	      8585	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       532	        73	      8630	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       533	       230	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       534	       230	      8634	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       535	       233	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       536	       233	      8579	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       537	       236	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       538	       236	      8640	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       539	        81	      8640	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       540	       242	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       541	       540	      8581	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       542	       242	      8585	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       543	       246	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       544	       246	      8634	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       545	       250	      8787	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       546	       545	      8832	    1	      0	                  [Loop@0x2253 in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8787,8888	86,9	8873	19	0	0	0	0	0	0	0	0
+       547	       250	      8835	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       548	       253	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       549	       548	      8581	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       550	       253	      8604	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       551	        81	      8614	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       552	        34	     10963	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10288	1383	0	8	0	0	0	0	0	0	0	0
+       553	       262	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       554	       553	      8581	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       555	       262	      8600	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       556	       265	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       557	       556	      8581	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       558	       265	      8588	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       559	        35	      8135	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	7984	205	0	11	0	0	0	0	0	0	0	0
+       560	       128	      8634	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       561	        34	     11482	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10288	1383	0	8	0	0	0	0	0	0	0	0
+       562	       272	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       563	       562	      8581	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       564	       272	      8585	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       565	       274	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       566	       274	      8579	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       567	       272	      8600	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       568	        34	     11415	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10288	1383	0	8	0	0	0	0	0	0	0	0
+       569	       277	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       570	       277	      8652	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       571	       193	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       572	       571	      8581	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       573	       193	      8585	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       574	       285	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       575	       285	      8640	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       576	       287	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       577	       576	      8581	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       578	       287	      8614	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       579	       432	      8581	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       580	        73	      8581	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       581	       118	      8617	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       582	       161	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       583	       161	      8662	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       584	        51	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       585	       584	      8581	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       586	        51	      8588	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       587	       301	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       588	       301	      8640	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       589	       455	      8581	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       590	       110	      8617	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       591	       304	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       592	       304	      8630	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       593	        35	      8073	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	7984	205	0	11	0	0	0	0	0	0	0	0
+       594	       307	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       595	       307	      8634	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       596	       311	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       597	       311	      8640	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       598	       252	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       599	       252	      8634	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       600	        73	      8652	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       601	       316	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       602	       316	      8579	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       603	        34	     10790	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10288	1383	0	8	0	0	0	0	0	0	0	0
+       604	       569	      8581	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       605	       277	      8588	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       606	       322	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       607	       322	      8579	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       608	        73	      8585	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       609	       138	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       610	       138	      8630	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       611	       329	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       612	       611	      8581	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       613	       329	      8585	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       614	       333	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       615	       614	      8581	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       616	       333	      8585	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       617	        84	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       618	        84	      8630	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       619	        62	      8614	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       620	       337	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       621	       337	      8630	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       622	        35	      8063	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	7984	205	0	11	0	0	0	0	0	0	0	0
+       623	       340	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       624	       623	      8581	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       625	       340	      8614	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       626	       136	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       627	       626	      8581	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       628	       136	      8588	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       629	       151	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       630	       151	      8640	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       631	       230	      8662	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       632	       351	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       633	       351	      8640	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       634	       216	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       635	       216	      8630	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       636	       609	      8581	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       637	       138	      8581	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       638	       565	      8581	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       639	       274	      8600	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       640	        34	     10959	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	10288	1383	0	8	0	0	0	0	0	0	0	0
+       641	       116	      8634	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       642	        85	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       643	        85	      8662	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       644	       367	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       645	       644	      8581	    1	      0	                  [Loop@0x217f in merge]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8575	98	8688	16	0	0	0	0	0	0	0	0
+       646	       367	      8585	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       647	       369	      8575	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       648	       369	      8630	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       649	       236	      8630	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	8192	705	0	14	0	0	0	0	0	0	0	0
+       650	       372	     11808	    0	      0	compute_single_unweighted_knn_class_shapley	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	11680	356	0	22	0	0	0	0	0	0	0	0
+       651	       650	     11888	    1	      0	[Loop@0x2e20 in compute_single_unweighted_knn_class_shapley]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	11808	217	12025	23	0	0	0	0	0	0	0	0
+       652	       372	     12000	    0	      0	compute_single_unweighted_knn_class_shapley	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	11680	356	0	22	0	0	0	0	0	0	0	0
+       653	       372	     11983	    0	      0	compute_single_unweighted_knn_class_shapley	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	11680	356	0	22	0	0	0	0	0	0	0	0
+       654	       372	     11995	    0	      0	compute_single_unweighted_knn_class_shapley	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	11680	356	0	22	0	0	0	0	0	0	0	0
+       655	       372	     11990	    0	      0	compute_single_unweighted_knn_class_shapley	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	11680	356	0	22	0	0	0	0	0	0	0	0
+       656	         3	      4640	    0	      0	                                    main	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	4000	1128	0	2	0	0	0	0	0	0	0	0
+       657	       656	      4688	    1	      0	                   [Loop@0x1220 in main]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	4640,5069	133,9	4773	25	0	0	0	0	0	0	0	0
+       658	         3	      4695	    0	      0	                                    main	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	4000	1128	0	2	0	0	0	0	0	0	0	0
+       659	         3	      4698	    0	      0	                                    main	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt1/alg1opt1.out	4000	1128	0	2	0	0	0	0	0	0	0	0
+       660	        -1	         0	    0	      0	                [Unknown stack frame(s)]	n/a	0	0	0	33	0	0	0	0	0	0	0	0

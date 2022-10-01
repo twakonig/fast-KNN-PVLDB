@@ -1,0 +1,72 @@
+# callstacks file version: 8
+#    rowid	    parent	       rva	 loop	 system	                                function	binary	instance_start_rva	instance_size	instance_end_rva	finst_rowid	roi	is_inlined	jit_method_id	tripcounts_roi	flops_roi	cachesim_roi	data_transfer_roi	projection_roi
+         1	        -1	      5312	    0	      0	                                  _start	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	5312	43	0	2	0	0	0	0	0	0	0	0
+         2	        -1	      5353	    0	      0	                                  _start	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	5312	43	0	2	0	0	0	0	0	0	0	0
+         3	         2	    138374	    0	      1	                       __libc_start_main	/lib/x86_64-linux-gnu/libc.so.6	138144	446	0	29	0	0	0	0	0	0	0	0
+         4	         3	      4896	    0	      0	                                    main	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	4128	1143	0	3	0	0	0	0	0	0	0	0
+         5	        36	      9380	    1	      0	    [Loop@0x24a0 in initialize_rand_mat]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	9376	62	9438	4	0	0	0	0	0	0	0	0
+         6	         5	    279448	    0	      1	                                    rand	/lib/x86_64-linux-gnu/libc.so.6	279440	14	0	30	0	0	0	0	0	0	0	0
+         7	         6	    278001	    0	      1	                                __random	/lib/x86_64-linux-gnu/libc.so.6	277904	183	0	31	0	0	0	0	0	0	0	0
+         8	         7	    279334	    0	      1	                              __random_r	/lib/x86_64-linux-gnu/libc.so.6	279280	148	0	32	0	0	0	0	0	0	0	0
+         9	         3	      4669	    0	      0	                                    main	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	4128	1143	0	3	0	0	0	0	0	0	0	0
+        10	        39	    135152	    1	      0	          [Loop@0x20b30 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	133936,135952,136008,136024,136040,136056,136072,136088,136165,136224,136252,136299	1255,51,10,10,11,10,10,45,10,20,30,10	135191	7	0	0	0	0	0	0	0	0
+        11	        41	    132964	    1	      0	            [Loop@0x20740 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	132928	148	133076	10	0	0	0	0	0	0	0	0
+        12	        41	    133037	    1	      0	            [Loop@0x20740 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	132928	148	133076	10	0	0	0	0	0	0	0	0
+        13	        38	    135767	    1	      0	          [Loop@0x20978 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	133496,135952,136008,136024,136040,136056,136072,136088,136224	2409,51,10,10,11,10,10,128,85	135905	9	0	0	0	0	0	0	0	0
+        14	        38	    135229	    1	      0	          [Loop@0x20978 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	133496,135952,136008,136024,136040,136056,136072,136088,136224	2409,51,10,10,11,10,10,128,85	135905	9	0	0	0	0	0	0	0	0
+        15	        14	    106237	    0	      0	                              quadsort64	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	106176	631	0	12	0	0	0	0	0	0	0	0
+        16	        47	     96501	    1	      0	           [Loop@0x178d0 in quad_swap64]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	96464	147	96611	13	0	0	0	0	0	0	0	0
+        17	        14	    106377	    0	      0	                              quadsort64	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	106176	631	0	12	0	0	0	0	0	0	0	0
+        18	        50	     94938	    1	      0	          [Loop@0x168f0 in quad_merge64]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	92400,94224,94256,95248,95296,95328,95344,95360,95392,95480	1553,26,688,35,28,11,11,28,11,30	93953	16	0	0	0	0	0	0	0	0
+        19	        52	     81740	    1	      0	        [Loop@0x13ef0 in parity_merge64]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	81648	134	81782	19	0	0	0	0	0	0	0	0
+        20	        54	    135015	    1	      0	          [Loop@0x20f60 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	135008	43	135051	21	0	0	0	0	0	0	0	0
+        21	        54	    135026	    1	      0	          [Loop@0x20f60 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	135008	43	135051	21	0	0	0	0	0	0	0	0
+        22	        10	    133081	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	132816	358	0	11	0	0	0	0	0	0	0	0
+        23	        39	    134968	    1	      0	          [Loop@0x20b30 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	133936,135952,136008,136024,136040,136056,136072,136088,136165,136224,136252,136299	1255,51,10,10,11,10,10,45,10,20,30,10	135191	7	0	0	0	0	0	0	0	0
+        24	         9	         0	    0	      0	                [Unknown stack frame(s)]	n/a	0	0	0	1	0	0	0	0	0	0	0	0
+        25	        58	    135229	    1	      0	          [Loop@0x20978 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	133496,135952,136008,136024,136040,136056,136072,136088,136224	2409,51,10,10,11,10,10,128,85	135905	9	0	0	0	0	0	0	0	0
+        26	        25	    106377	    0	      0	                              quadsort64	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	106176	631	0	12	0	0	0	0	0	0	0	0
+        27	        60	     95062	    1	      0	          [Loop@0x17338 in quad_merge64]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	95032,95472,95510	210,8,20	95432	22	0	0	0	0	0	0	0	0
+        28	        62	     91984	    1	      0	[Loop@0x163b8 in partial_backward_merge64]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	91064,91984,92024	188,29,28	91252	23	0	0	0	0	0	0	0	0
+        29	        54	    135034	    1	      0	          [Loop@0x20f60 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	135008	43	135051	21	0	0	0	0	0	0	0	0
+        30	        10	      3856	    0	      0	                              func@0xf10	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	3856	6	0	25	0	0	0	0	0	0	0	0
+        31	        41	    132988	    1	      0	            [Loop@0x20740 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	132928	148	133076	10	0	0	0	0	0	0	0	0
+        32	        41	    133004	    1	      0	            [Loop@0x20740 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	132928	148	133076	10	0	0	0	0	0	0	0	0
+        33	         3	      4705	    0	      0	                                    main	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	4128	1143	0	3	0	0	0	0	0	0	0	0
+        34	        68	    136647	    1	      0	[Loop@0x21560 in compute_single_unweighted_knn_class_shapley]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	136544	110	136654	26	0	0	0	0	0	0	0	0
+        35	         4	      9368	    0	      0	                     initialize_rand_mat	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	9344	112	0	5	0	0	0	0	0	0	0	0
+        36	        35	      9376	    1	      0	    [Loop@0x2498 in initialize_rand_mat]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	9368	81	9449	6	0	0	0	0	0	0	0	0
+        37	         4	      9380	    0	      0	                     initialize_rand_mat	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	9344	112	0	5	0	0	0	0	0	0	0	0
+        38	         9	    133496	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	133184	3130	0	8	0	0	0	0	0	0	0	0
+        39	        38	    133936	    1	      0	          [Loop@0x20978 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	133496,135952,136008,136024,136040,136056,136072,136088,136224	2409,51,10,10,11,10,10,128,85	135905	9	0	0	0	0	0	0	0	0
+        40	         9	    135152	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	133184	3130	0	8	0	0	0	0	0	0	0	0
+        41	        10	    132928	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	132816	358	0	11	0	0	0	0	0	0	0	0
+        42	        10	    132964	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	132816	358	0	11	0	0	0	0	0	0	0	0
+        43	        10	    133037	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	132816	358	0	11	0	0	0	0	0	0	0	0
+        44	         9	    135767	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	133184	3130	0	8	0	0	0	0	0	0	0	0
+        45	         9	    135229	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	133184	3130	0	8	0	0	0	0	0	0	0	0
+        46	        15	     96312	    0	      0	                             quad_swap64	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	95856	6288	0	14	0	0	0	0	0	0	0	0
+        47	        46	     96464	    1	      0	           [Loop@0x17838 in quad_swap64]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	96312,99072	1016,34	97328	15	0	0	0	0	0	0	0	0
+        48	        15	     96501	    0	      0	                             quad_swap64	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	95856	6288	0	14	0	0	0	0	0	0	0	0
+        49	        17	     92288	    0	      0	                            quad_merge64	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	92128	3402	0	17	0	0	0	0	0	0	0	0
+        50	        49	     92400	    1	      0	          [Loop@0x16880 in quad_merge64]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	92288,94016,94224,94256,95248,95288,95328,95344,95360,95392,95408,95480	1718,204,26,720,35,36,11,11,28,11,17,30	94976	18	0	0	0	0	0	0	0	0
+        51	        17	     94938	    0	      0	                            quad_merge64	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	92128	3402	0	17	0	0	0	0	0	0	0	0
+        52	        18	     81648	    0	      0	                          parity_merge64	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	81536	359	0	20	0	0	0	0	0	0	0	0
+        53	        18	     81740	    0	      0	                          parity_merge64	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	81536	359	0	20	0	0	0	0	0	0	0	0
+        54	        39	    135008	    1	      0	          [Loop@0x20b30 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	133936,135952,136008,136024,136040,136056,136072,136088,136165,136224,136252,136299	1255,51,10,10,11,10,10,45,10,20,30,10	135191	7	0	0	0	0	0	0	0	0
+        55	         9	    135015	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	133184	3130	0	8	0	0	0	0	0	0	0	0
+        56	         9	    135026	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	133184	3130	0	8	0	0	0	0	0	0	0	0
+        57	         9	    134968	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	133184	3130	0	8	0	0	0	0	0	0	0	0
+        58	        24	    133496	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	133184	3130	0	8	0	0	0	0	0	0	0	0
+        59	        24	    135229	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	133184	3130	0	8	0	0	0	0	0	0	0	0
+        60	        26	     95032	    0	      0	                            quad_merge64	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	92128	3402	0	17	0	0	0	0	0	0	0	0
+        61	        26	     95062	    0	      0	                            quad_merge64	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	92128	3402	0	17	0	0	0	0	0	0	0	0
+        62	        27	     91064	    0	      0	                partial_backward_merge64	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	90912	1203	0	24	0	0	0	0	0	0	0	0
+        63	        27	     91984	    0	      0	                partial_backward_merge64	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	90912	1203	0	24	0	0	0	0	0	0	0	0
+        64	         9	    135034	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	133184	3130	0	8	0	0	0	0	0	0	0	0
+        65	        10	    132988	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	132816	358	0	11	0	0	0	0	0	0	0	0
+        66	        10	    133004	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	132816	358	0	11	0	0	0	0	0	0	0	0
+        67	        33	    136488	    0	      0	compute_single_unweighted_knn_class_shapley	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	136320	368	0	27	0	0	0	0	0	0	0	0
+        68	        67	    136544	    1	      0	[Loop@0x21528 in compute_single_unweighted_knn_class_shapley]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	136488	189	136677	28	0	0	0	0	0	0	0	0
+        69	        33	    136647	    0	      0	compute_single_unweighted_knn_class_shapley	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	136320	368	0	27	0	0	0	0	0	0	0	0
+        70	        -1	         0	    0	      0	                      [Outside any loop]	n/a	0	0	0	33	0	0	0	0	0	0	0	0

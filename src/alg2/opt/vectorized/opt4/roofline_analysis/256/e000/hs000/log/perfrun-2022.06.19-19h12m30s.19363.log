@@ -1,0 +1,96 @@
+10 [140560803510208] INFO perfrun.launcher <> - Launcher main begin
+11 [140560803510208] INFO perfrun.launcher <> - MessageCatalogInit finished
+11 [140560803510208] INFO perfrun.launcher <> - Launcher instance created
+11 [140560803510208] INFO perfrun.launcher <> - argc = 7; cmdline = /opt/intel/oneapi/advisor/2022.1.0/bin64/advixe-runss --ui-output-format xml --ui-output-fd 6 --option-file /home/stefan/git/asl/team36/src/alg2/opt/vectorized/opt4/roofline_analysis/256/e000/hs000/config/runss.options 
+41 [140560803510208] INFO perfrun.launcher <> - create msngr2::ICliToolContext
+41 [140560803510208] INFO perfrun.launcher <> - create file finder object
+42 [140560803510208] INFO perfrun.launcher <> - create a result directory: pattern = /home/stefan/git/asl/team36/src/alg2/opt/vectorized/opt4/roofline_analysis/256/e000/hs000 pid = 4294967295
+43 [140560803510208] INFO perfrun.sdk <> - checked that the directory /home/stefan/git/asl/team36/src/alg2/opt/vectorized/opt4/roofline_analysis/256/e000/hs000 is a local directory
+43 [140560803510208] INFO perfrun.sdk <> - the directory /home/stefan/git/asl/team36/src/alg2/opt/vectorized/opt4/roofline_analysis/256/e000/hs000 is a local directory with FS type ID 61267
+43 [140560803510208] INFO perfrun.launcher <> - create data directory = /home/stefan/git/asl/team36/src/alg2/opt/vectorized/opt4/roofline_analysis/256/e000/hs000/data.0
+43 [140560803510208] INFO perfrun.launcher <> - Creating the master collection flag
+44 [140560803510208] INFO perfrun.launcher <> - Done creating the master collection flag
+45 [140560672028416] INFO perfrun.launcher <> - plugin [remoteplug] was disabled because it doesn't support the given collection type.
+45 [140560672028416] INFO perfrun.sdk <> - Allocating TMU :/home/stefan/git/asl/team36/src/alg2/opt/vectorized/opt4/roofline_analysis/256/e000/hs000/data.0/systemcollector-19363-stefan-asus.sc
+45 [140560672028416] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+45 [140560672028416] INFO perfrun.launcher <> - plugin [gpu] was disabled because it doesn't support the given collection type.
+45 [140560672028416] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+45 [140560672028416] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+45 [140560672028416] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+45 [140560672028416] INFO perfrun.mrte <> - system-wide mode is 0
+45 [140560672028416] INFO perfrun.mrte <> - Getting  mrte profiling environment ...
+50 [140560672028416] INFO perfrun.mrte <> - INTEL_MRTE_DATA_DIR=/home/stefan/git/asl/team36/src/alg2/opt/vectorized/opt4/roofline_analysis/256/e000/hs000/data.0
+50 [140560672028416] INFO perfrun.mrte <> - INTEL_MRTE_HOST_NAME=stefan-asus
+50 [140560672028416] INFO perfrun.mrte <> - JAVA_TOOL_OPTIONS=-agentlib:advixe_tpssmrte_javaprof_1.0 -Dsun.boot.library.path=/opt/intel/oneapi/advisor/2022.1.0/lib32/runtime:/opt/intel/oneapi/advisor/2022.1.0/lib64/runtime
+50 [140560672028416] INFO perfrun.mrte <> - LD_LIBRARY_PATH=/opt/intel/oneapi/advisor/2022.1.0/lib32/runtime:/opt/intel/oneapi/advisor/2022.1.0/lib64/runtime:/home/stefan/git/autonomous_2019/devel/lib:/home/stefan/maplab_ws/devel/lib:/opt/ros/melodic/lib
+50 [140560672028416] INFO perfrun.mrte <> - Data directory: /home/stefan/git/asl/team36/src/alg2/opt/vectorized/opt4/roofline_analysis/256/e000/hs000/data.0
+50 [140560672028416] INFO perfrun.mrte <> - Mrte plugin is initialized
+50 [140560672028416] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+50 [140560672028416] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+50 [140560672028416] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+50 [140560672028416] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+50 [140560672028416] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+50 [140560672028416] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+50 [140560672028416] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+50 [140560672028416] INFO perfrun.tpss <> - initialize tpss controller
+50 [140560672028416] INFO perfrun.tpss <> - configure collection mode: value = cpu:stack
+50 [140560672028416] INFO perfrun.tpss <> - default obj-size-min=1024
+50 [140560672028416] INFO perfrun.tpss <> - default hash-table-size=0
+50 [140560672028416] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+50 [140560672028416] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+50 [140560672028416] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+50 [140560672028416] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+50 [140560672028416] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+50 [140560672028416] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+50 [140560672028416] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+50 [140560672028416] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+50 [140560672028416] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+50 [140560803510208] INFO perfrun.launcher <> - set environment variable: LD_LIBRARY_PATH = /opt/intel/oneapi/advisor/2022.1.0/lib32/runtime:/opt/intel/oneapi/advisor/2022.1.0/lib64/runtime:/home/stefan/git/autonomous_2019/devel/lib:/home/stefan/maplab_ws/devel/lib:/opt/ros/melodic/lib
+50 [140560803510208] INFO perfrun.launcher <> - set environment variable: INTEL_LIBITTNOTIFY32 = /opt/intel/oneapi/advisor/2022.1.0/lib32/runtime/libittnotify_collector.so
+50 [140560803510208] INFO perfrun.launcher <> - set environment variable: INTEL_LIBITTNOTIFY64 = /opt/intel/oneapi/advisor/2022.1.0/lib64/runtime/libittnotify_collector.so
+50 [140560803510208] INFO perfrun.launcher <> - set environment variable: INTEL_ITTNOTIFY_GROUPS = 
+50 [140560803510208] INFO perfrun.launcher <> - set environment variable: INTEL_JIT_PROFILER32 = /opt/intel/oneapi/advisor/2022.1.0/lib32/runtime/libittnotify_collector.so
+50 [140560803510208] INFO perfrun.launcher <> - set environment variable: INTEL_JIT_PROFILER64 = /opt/intel/oneapi/advisor/2022.1.0/lib64/runtime/libittnotify_collector.so
+50 [140560803510208] INFO perfrun.launcher <> - set environment variable: VS_PROFILER = libittnotify_collector.so
+50 [140560803510208] INFO perfrun.launcher <> - set environment variable: OMP_TOOL_LIBRARIES = /opt/intel/oneapi/advisor/2022.1.0/lib32/runtime/libittnotify_collector.so:/opt/intel/oneapi/advisor/2022.1.0/lib64/runtime/libittnotify_collector.so
+50 [140560803510208] INFO perfrun.launcher <> - set environment variable: ENABLE_JITPROFILING = 1
+50 [140560803510208] INFO perfrun.launcher <> - set environment variable: CL_CONFIG_USE_VTUNE = True
+50 [140560803510208] INFO perfrun.launcher <> - set environment variable: KMP_FORKJOIN_FRAMES = 0
+50 [140560803510208] INFO perfrun.launcher <> - set environment variable: KMP_FORKJOIN_FRAMES_MODE = 0
+50 [140560803510208] INFO perfrun.launcher <> - set environment variable: OMP_TOOL = disabled
+50 [140560803510208] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_DATA_DIR = /home/stefan/git/asl/team36/src/alg2/opt/vectorized/opt4/roofline_analysis/256/e000/hs000/data.0
+50 [140560803510208] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_HOST_NAME = stefan-asus
+50 [140560803510208] INFO perfrun.launcher <> - set environment variable: JAVA_TOOL_OPTIONS = -agentlib:advixe_tpssmrte_javaprof_1.0 -Dsun.boot.library.path=/opt/intel/oneapi/advisor/2022.1.0/lib32/runtime:/opt/intel/oneapi/advisor/2022.1.0/lib64/runtime
+50 [140560803510208] INFO perfrun.launcher <> - set environment variable: LD_LIBRARY_PATH = /opt/intel/oneapi/advisor/2022.1.0/lib32/runtime:/opt/intel/oneapi/advisor/2022.1.0/lib64/runtime:/home/stefan/git/autonomous_2019/devel/lib:/home/stefan/maplab_ws/devel/lib:/opt/ros/melodic/lib
+50 [140560803510208] INFO perfrun.launcher <> - RpcServer: run RPC server to handle requests
+50 [140560803510208] INFO perfrun.launcher <> - Launcher: command line to start before modification = ./alg2opt4.out 256 256 256 3 1
+51 [140560803510208] INFO perfrun.launcher <> - Launcher: command line to start after modification = /opt/intel/oneapi/advisor/2022.1.0/bin64/pin -error_file /home/stefan/git/asl/team36/src/alg2/opt/vectorized/opt4/roofline_analysis/256/e000/hs000/data.0/pinerr.tpsslog -detach_reattach -follow_execv -tool_load_option deepbind -t64 /opt/intel/oneapi/advisor/2022.1.0/lib64/libtpsstool.so -t /opt/intel/oneapi/advisor/2022.1.0/lib32/libtpsstool.so -server_name tpss_ipc.19363 -prd_dir /opt/intel/oneapi/advisor/2022.1.0 -- ./alg2opt4.out 256 256 256 3 1
+51 [140560803510208] INFO perfrun.launcher <> - ProcessCreator object was created
+51 [140560803510208] INFO perfrun.launcher <> - Launcher: the process was started in suspend mode
+52 [140560672028416] WARN perfrun.system <> - Could not do anything with /sys/kernel/debug/kvm: boost::filesystem::status: Permission denied: "/sys/kernel/debug/kvm", at file: vcs/perfrun1/plugins/system/src/trace_writer.cpp:787
+52 [140560672028416] WARN perfrun.system <> - Folder "/var/run/libvirt/qemu/"doesn't exist, at file: vcs/perfrun1/plugins/system/src/trace_writer.cpp:800
+53 [140560672028416] WARN perfrun.sdk <> - Failed to find xl binary on any of the system paths: /bin, /sbin, /usr/bin, /usr/sbin., at file: vcs/perfrun1/sdk/src/utils.cpp:204
+57 [140560672028416] INFO perfrun.vdso <> - Helper runtool '/opt/intel/oneapi/advisor/2022.1.0/bin32/advixe-runss -dump-vdso -r /home/stefan/git/asl/team36/src/alg2/opt/vectorized/opt4/roofline_analysis/256/e000/hs000 --tmp-dir /tmp/advixe-tmp-stefan' returned 1
+114 [140560672028416] INFO perfrun.vdso <> - Helper runtool '/opt/intel/oneapi/advisor/2022.1.0/bin64/advixe-runss -dump-vdso -r /home/stefan/git/asl/team36/src/alg2/opt/vectorized/opt4/roofline_analysis/256/e000/hs000 --tmp-dir /tmp/advixe-tmp-stefan' returned 0
+114 [140560672028416] INFO perfrun.itt <> - start itt controller for pid #19368
+114 [140560672028416] INFO perfrun.tpss <> - start tpss controller for pid #19368
+164 [140560803510208] INFO perfrun.launcher <> - Launcher: all plugins were started
+164 [140560803510208] INFO perfrun.launcher <> - DirectoryMonitor object was created
+164 [140560803510208] INFO perfrun.launcher <> - DirectoryMonitor: a callback was added
+164 [140560803510208] INFO perfrun.launcher <> - DirectoryMonitor was started with pingTime = 1000
+164 [140560803510208] INFO perfrun.launcher <> - DeadlineTimer is going to be constructed
+165 [140560803510208] INFO perfrun.launcher <> - DeadlineTimer: a callback was added
+166 [140560803510208] INFO perfrun.launcher <> - Launcher: resume the profiled application and  wait its termination or stop command
+1177 [140560803510208] INFO perfrun.launcher <> - Launcher: the profiled application was terminated  with exit code = 0
+1180 [140560672028416] INFO perfrun.itt <> - detach itt controller
+1180 [140560672028416] INFO perfrun.itt <> - detach itt controller done
+1180 [140560672028416] INFO perfrun.tpss <> - stop tpss controller
+1180 [140560672028416] INFO perfrun.sdk <> - De-allocating TMU: /home/stefan/git/asl/team36/src/alg2/opt/vectorized/opt4/roofline_analysis/256/e000/hs000/data.0/systemcollector-19363-stefan-asus.sc
+1180 [140560672028416] INFO perfrun.system <> - closed the system trace file: /home/stefan/git/asl/team36/src/alg2/opt/vectorized/opt4/roofline_analysis/256/e000/hs000/data.0/systemcollector-19363-stefan-asus.sc
+1180 [140560803510208] INFO perfrun.launcher <> - Launcher: all plugins were stopped.
+1181 [140560803510208] INFO perfrun.launcher <> - DeadlineTimer is going to be destroyed
+1181 [140560803510208] INFO perfrun.launcher <> - DeadlineTimer was destroyed
+1181 [140560803510208] INFO perfrun.launcher <> - DirectoryMonitor object was destroyed
+1181 [140560803510208] WARN perfrun.launcher <> - Stop command is ignored because it is received when collection is already stopped, at file: vcs/perfrun1/launcher/src/command_handler.cpp:226
+1181 [140560803510208] INFO perfrun.launcher <> - Application exit code: 0
+1181 [140560803510208] INFO perfrun.launcher <> - Exit code: 0

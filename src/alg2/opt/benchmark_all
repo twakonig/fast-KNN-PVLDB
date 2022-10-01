@@ -1,0 +1,6 @@
+cd scalar
+./benchmark_all
+cd ..
+cd vectorized
+./benchmark_all
+

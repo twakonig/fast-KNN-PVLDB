@@ -1,0 +1,5 @@
+cd scalar
+./roofline_all
+cd ..
+cd vectorized
+./roofline_all

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<log version="1.0" tool="runtool">
+
+<msg id="1" tool="runtool">
+  <type>log-start</type>
+  <arg>2022/06/19 17:08:00</arg>
+</msg>
+<msg id="2" tool="runtool">
+  <type>bandwidth-measurement-starts</type>
+</msg>
+<msg id="3" tool="runtool">
+  <type>bandwidth-measurement-done</type>
+</msg>
+<msg id="4" tool="runtool">
+  <type>collector-starts</type>
+</msg>
+<msg id="5" tool="runtool">
+  <type>marker-file</type>
+  <arg>/home/stefan/git/asl/team36/src/alg2/opt/vectorized/opt1/roofline_analysis/1024/e000/trc000/trc000.advixe</arg>
+</msg>
+<msg id="6" tool="trc">
+  <type>PROCESS_START</type>
+  <arg>/home/stefan/git/asl/team36/src/alg2/opt/vectorized/opt1/alg2opt1.out</arg>
+  <arg>9682</arg>
+  <severity>INFO</severity>
+  <timestamp>Sun Jun 19 17:08:10 2022</timestamp>
+</msg>
+<msg id="7" tool="trc">
+  <type>PROCESS_ANALYSIS_MODE</type>
+  <arg>full</arg>
+  <severity>INFO</severity>
+  <timestamp>Sun Jun 19 17:08:11 2022</timestamp>
+</msg>
+<msg id="8" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/home/stefan/git/asl/team36/src/alg2/opt/vectorized/opt1/alg2opt1.out</arg>
+  <arg>0x561df746a000</arg>
+  <arg>0x561df767d12f</arg>
+  <arg>yes</arg>
+  <severity>INFO</severity>
+  <timestamp>Sun Jun 19 17:08:11 2022</timestamp>
+</msg>
+<msg id="9" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib64/ld-linux-x86-64.so.2</arg>
+  <arg>0x7f43fccfa000</arg>
+  <arg>0x7f43fcf2516f</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Sun Jun 19 17:08:11 2022</timestamp>
+</msg>
+<msg id="10" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>[vdso]</arg>
+  <arg>0x7ffe8f5ca000</arg>
+  <arg>0x7ffe8f5caab0</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Sun Jun 19 17:08:11 2022</timestamp>
+</msg>
+<msg id="11" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib/x86_64-linux-gnu/libm.so.6</arg>
+  <arg>0x7f43e6632000</arg>
+  <arg>0x7f43e69cf157</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Sun Jun 19 17:08:11 2022</timestamp>
+</msg>
+<msg id="12" tool="trc">
+  <type>LOAD_MODULE</type>
+  <arg>/lib/x86_64-linux-gnu/libc.so.6</arg>
+  <arg>0x7f43e61ce000</arg>
+  <arg>0x7f43e65beadf</arg>
+  <arg>no</arg>
+  <severity>INFO</severity>
+  <timestamp>Sun Jun 19 17:08:11 2022</timestamp>
+</msg>
+<msg id="13" tool="trc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/home/stefan/git/asl/team36/src/alg2/opt/vectorized/opt1/alg2opt1.out</arg>
+  <severity>INFO</severity>
+  <timestamp>Sun Jun 19 17:44:34 2022</timestamp>
+</msg>
+<msg id="14" tool="trc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib64/ld-linux-x86-64.so.2</arg>
+  <severity>INFO</severity>
+  <timestamp>Sun Jun 19 17:44:34 2022</timestamp>
+</msg>
+<msg id="15" tool="trc">
+  <type>UNLOAD_MODULE</type>
+  <arg>[vdso]</arg>
+  <severity>INFO</severity>
+  <timestamp>Sun Jun 19 17:44:34 2022</timestamp>
+</msg>
+<msg id="16" tool="trc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib/x86_64-linux-gnu/libm.so.6</arg>
+  <severity>INFO</severity>
+  <timestamp>Sun Jun 19 17:44:34 2022</timestamp>
+</msg>
+<msg id="17" tool="trc">
+  <type>UNLOAD_MODULE</type>
+  <arg>/lib/x86_64-linux-gnu/libc.so.6</arg>
+  <severity>INFO</severity>
+  <timestamp>Sun Jun 19 17:44:34 2022</timestamp>
+</msg>
+<msg id="18" tool="trc">
+  <type>PROCESS_FINISH</type>
+  <arg>/home/stefan/git/asl/team36/src/alg2/opt/vectorized/opt1/alg2opt1.out</arg>
+  <arg>9682</arg>
+  <arg>0x0</arg>
+  <severity>INFO</severity>
+  <timestamp>Sun Jun 19 17:44:34 2022</timestamp>
+</msg>
+<msg id="19" tool="runtool">
+  <type>app-exit-code</type>
+  <arg>0</arg>
+</msg>
+<msg id="20" tool="runtool">
+  <type>marker-file</type>
+  <arg>/home/stefan/git/asl/team36/src/alg2/opt/vectorized/opt1/roofline_analysis/1024/e000/trc000/trc000.advixe</arg>
+</msg>
+<msg id="21" tool="runtool">
+  <type>collector-done</type>
+</msg>
+<msg id="22" tool="runtool">
+  <type>log-end</type>
+  <arg>2022/06/19 17:44:37</arg>
+</msg>
+
+</log>
+

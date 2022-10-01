@@ -1,0 +1,226 @@
+# callstacks file version: 8
+#    rowid	    parent	       rva	 loop	 system	                                function	binary	instance_start_rva	instance_size	instance_end_rva	finst_rowid	roi	is_inlined	jit_method_id	tripcounts_roi	flops_roi	cachesim_roi	data_transfer_roi	projection_roi
+         1	        -1	      5200	    0	      0	                                  _start	/home/stefan/git/asl/team36/src/alg2.out	5200	43	0	2	0	0	0	0	0	0	0	0
+         2	       107	     15661	    1	      0	   [Loop@0x3d08 in knn_mc_approximation]	/home/stefan/git/asl/team36/src/alg2.out	15624,16816,16848,16904,16920,16936,16944,16976	676,30,11,10,10,7,10,125	16300	3	0	0	0	0	0	0	0	0
+         3	       109	     13754	    1	      0	                 [Loop@0x35a8 in insert]	/home/stefan/git/asl/team36/src/alg2.out	13736	44	13780	7	0	0	0	0	0	0	0	0
+         4	       109	     13778	    1	      0	                 [Loop@0x35a8 in insert]	/home/stefan/git/asl/team36/src/alg2.out	13736	44	13780	7	0	0	0	0	0	0	0	0
+         5	       112	     13962	    1	      0	                 [Loop@0x3660 in insert]	/home/stefan/git/asl/team36/src/alg2.out	13920	44	13964	9	0	0	0	0	0	0	0	0
+         6	         2	     14032	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+         7	       115	     12960	    1	      0	                   [Loop@0x3290 in down]	/home/stefan/git/asl/team36/src/alg2.out	12944	46	12990	10	0	0	0	0	0	0	0	0
+         8	       109	     13765	    1	      0	                 [Loop@0x35a8 in insert]	/home/stefan/git/asl/team36/src/alg2.out	13736	44	13780	7	0	0	0	0	0	0	0	0
+         9	       109	     13770	    1	      0	                 [Loop@0x35a8 in insert]	/home/stefan/git/asl/team36/src/alg2.out	13736	44	13780	7	0	0	0	0	0	0	0	0
+        10	        -1	      5241	    0	      0	                                  _start	/home/stefan/git/asl/team36/src/alg2.out	5200	43	0	2	0	0	0	0	0	0	0	0
+        11	        10	    138374	    0	      1	                       __libc_start_main	/lib/x86_64-linux-gnu/libc.so.6	138144	446	0	26	0	0	0	0	0	0	0	0
+        12	        11	      4671	    0	      0	                                    main	/home/stefan/git/asl/team36/src/alg2.out	4128	1066	0	13	0	0	0	0	0	0	0	0
+        13	       121	     15388	    1	      0	   [Loop@0x3c18 in knn_mc_approximation]	/home/stefan/git/asl/team36/src/alg2.out	15384	41	15425	14	0	0	0	0	0	0	0	0
+        14	        13	    279448	    0	      1	                                    rand	/lib/x86_64-linux-gnu/libc.so.6	279440	14	0	27	0	0	0	0	0	0	0	0
+        15	        14	    278070	    0	      1	                                __random	/lib/x86_64-linux-gnu/libc.so.6	277904	183	0	28	0	0	0	0	0	0	0	0
+        16	        12	         0	    0	      0	                [Unknown stack frame(s)]	n/a	0	0	0	1	0	0	0	0	0	0	0	0
+        17	       125	     15661	    1	      0	   [Loop@0x3d08 in knn_mc_approximation]	/home/stefan/git/asl/team36/src/alg2.out	15624,16816,16848,16904,16920,16936,16944,16976	676,30,11,10,10,7,10,125	16300	3	0	0	0	0	0	0	0	0
+        18	       127	     13954	    1	      0	                 [Loop@0x3660 in insert]	/home/stefan/git/asl/team36/src/alg2.out	13920	44	13964	9	0	0	0	0	0	0	0	0
+        19	       127	     13962	    1	      0	                 [Loop@0x3660 in insert]	/home/stefan/git/asl/team36/src/alg2.out	13920	44	13964	9	0	0	0	0	0	0	0	0
+        20	       127	     13949	    1	      0	                 [Loop@0x3660 in insert]	/home/stefan/git/asl/team36/src/alg2.out	13920	44	13964	9	0	0	0	0	0	0	0	0
+        21	       127	     13938	    1	      0	                 [Loop@0x3660 in insert]	/home/stefan/git/asl/team36/src/alg2.out	13920	44	13964	9	0	0	0	0	0	0	0	0
+        22	        17	     14032	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+        23	       133	     12964	    1	      0	                   [Loop@0x3290 in down]	/home/stefan/git/asl/team36/src/alg2.out	12944	46	12990	10	0	0	0	0	0	0	0	0
+        24	       135	     13778	    1	      0	                 [Loop@0x35a8 in insert]	/home/stefan/git/asl/team36/src/alg2.out	13736	44	13780	7	0	0	0	0	0	0	0	0
+        25	       135	     13754	    1	      0	                 [Loop@0x35a8 in insert]	/home/stefan/git/asl/team36/src/alg2.out	13736	44	13780	7	0	0	0	0	0	0	0	0
+        26	       135	     13770	    1	      0	                 [Loop@0x35a8 in insert]	/home/stefan/git/asl/team36/src/alg2.out	13736	44	13780	7	0	0	0	0	0	0	0	0
+        27	       139	     12750	    1	      0	                   [Loop@0x31b0 in down]	/home/stefan/git/asl/team36/src/alg2.out	12720	45	12765	15	0	0	0	0	0	0	0	0
+        28	        17	     13972	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+        29	       127	     13929	    1	      0	                 [Loop@0x3660 in insert]	/home/stefan/git/asl/team36/src/alg2.out	13920	44	13964	9	0	0	0	0	0	0	0	0
+        30	       127	     13958	    1	      0	                 [Loop@0x3660 in insert]	/home/stefan/git/asl/team36/src/alg2.out	13920	44	13964	9	0	0	0	0	0	0	0	0
+        31	       133	     12988	    1	      0	                   [Loop@0x3290 in down]	/home/stefan/git/asl/team36/src/alg2.out	12944	46	12990	10	0	0	0	0	0	0	0	0
+        32	       144	     12579	    1	      0	                   [Loop@0x3100 in down]	/home/stefan/git/asl/team36/src/alg2.out	12544	45	12589	16	0	0	0	0	0	0	0	0
+        33	       144	     12563	    1	      0	                   [Loop@0x3100 in down]	/home/stefan/git/asl/team36/src/alg2.out	12544	45	12589	16	0	0	0	0	0	0	0	0
+        34	       135	     13750	    1	      0	                 [Loop@0x35a8 in insert]	/home/stefan/git/asl/team36/src/alg2.out	13736	44	13780	7	0	0	0	0	0	0	0	0
+        35	        17	     13828	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+        36	       197	    621032	    0	      1	                               _int_free	/lib/x86_64-linux-gnu/libc.so.6	620931,621360,621568,622208,622240,623633,624350	237,48,608,16,1388,701,197	0	29	0	1	0	0	0	0	0	0
+        37	       133	     12975	    1	      0	                   [Loop@0x3290 in down]	/home/stefan/git/asl/team36/src/alg2.out	12944	46	12990	10	0	0	0	0	0	0	0	0
+        38	       139	     12755	    1	      0	                   [Loop@0x31b0 in down]	/home/stefan/git/asl/team36/src/alg2.out	12720	45	12765	15	0	0	0	0	0	0	0	0
+        39	       150	     13179	    1	      0	                   [Loop@0x3350 in down]	/home/stefan/git/asl/team36/src/alg2.out	13136	45	13181	17	0	0	0	0	0	0	0	0
+        40	        17	     14076	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+        41	       153	     11931	    1	      0	                     [Loop@0x2e70 in up]	/home/stefan/git/asl/team36/src/alg2.out	11888	45	11933	18	0	0	0	0	0	0	0	0
+        42	        14	    277992	    0	      1	                                __random	/lib/x86_64-linux-gnu/libc.so.6	277904	183	0	28	0	0	0	0	0	0	0	0
+        43	       139	     12735	    1	      0	                   [Loop@0x31b0 in down]	/home/stefan/git/asl/team36/src/alg2.out	12720	45	12765	15	0	0	0	0	0	0	0	0
+        44	       135	     13765	    1	      0	                 [Loop@0x35a8 in insert]	/home/stefan/git/asl/team36/src/alg2.out	13736	44	13780	7	0	0	0	0	0	0	0	0
+        45	       144	     12587	    1	      0	                   [Loop@0x3100 in down]	/home/stefan/git/asl/team36/src/alg2.out	12544	45	12589	16	0	0	0	0	0	0	0	0
+        46	       139	     12763	    1	      0	                   [Loop@0x31b0 in down]	/home/stefan/git/asl/team36/src/alg2.out	12720	45	12765	15	0	0	0	0	0	0	0	0
+        47	       139	     12739	    1	      0	                   [Loop@0x31b0 in down]	/home/stefan/git/asl/team36/src/alg2.out	12720	45	12765	15	0	0	0	0	0	0	0	0
+        48	       132	     12892	    1	      0	                   [Loop@0x3028 in down]	/home/stefan/git/asl/team36/src/alg2.out	12328,12824,13232,13318	493,401,40,296	13296,13272	12	0	0	0	0	0	0	0	0
+        49	       200	   1633126	    1	      1	[Loop at line 405 in __memmove_avx_unaligned_erms]	/lib/x86_64-linux-gnu/libc.so.6	1633089	68	0	32	0	0	0	0	0	0	0	0
+        50	       127	     13934	    1	      0	                 [Loop@0x3660 in insert]	/home/stefan/git/asl/team36/src/alg2.out	13920	44	13964	9	0	0	0	0	0	0	0	0
+        51	       203	    622080	    0	      1	                              tcache_put	/lib/x86_64-linux-gnu/libc.so.6	621360,622080,622384	48,42,63	0	34	0	1	0	0	0	0	0	0
+        52	       162	     12078	    1	      0	                     [Loop@0x2f10 in up]	/home/stefan/git/asl/team36/src/alg2.out	12048	45	12093	21	0	0	0	0	0	0	0	0
+        53	       153	     11907	    1	      0	                     [Loop@0x2e70 in up]	/home/stefan/git/asl/team36/src/alg2.out	11888	45	11933	18	0	0	0	0	0	0	0	0
+        54	        17	     13873	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+        55	        54	   1633014	    0	      1	            __memmove_avx_unaligned_erms	/lib/x86_64-linux-gnu/libc.so.6	1632656	980	0	33	0	0	0	0	0	0	0	0
+        56	       132	     12356	    1	      0	                   [Loop@0x3028 in down]	/home/stefan/git/asl/team36/src/alg2.out	12328,12824,13232,13318	493,401,40,296	13296,13272	12	0	0	0	0	0	0	0	0
+        57	       205	    618667	    1	      1	[Loop at line 3049 in __GI___libc_malloc]	/lib/x86_64-linux-gnu/libc.so.6	618574,618968,619096,619360	361,63,259,107	0	35	0	0	0	0	0	0	0	0
+        58	        57	    610637	    0	      1	                             _int_malloc	/lib/x86_64-linux-gnu/libc.so.6	607024	4116	0	37	0	0	0	0	0	0	0	0
+        59	       144	     12559	    1	      0	                   [Loop@0x3100 in down]	/home/stefan/git/asl/team36/src/alg2.out	12544	45	12589	16	0	0	0	0	0	0	0	0
+        60	       127	     13945	    1	      0	                 [Loop@0x3660 in insert]	/home/stefan/git/asl/team36/src/alg2.out	13920	44	13964	9	0	0	0	0	0	0	0	0
+        61	       150	     13155	    1	      0	                   [Loop@0x3350 in down]	/home/stefan/git/asl/team36/src/alg2.out	13136	45	13181	17	0	0	0	0	0	0	0	0
+        62	       169	     16391	    1	      0	   [Loop@0x4000 in knn_mc_approximation]	/home/stefan/git/asl/team36/src/alg2.out	16384	62	16446	22	0	0	0	0	0	0	0	0
+        63	       144	     12574	    1	      0	                   [Loop@0x3100 in down]	/home/stefan/git/asl/team36/src/alg2.out	12544	45	12589	16	0	0	0	0	0	0	0	0
+        64	        17	     13702	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+        65	        64	   1633014	    0	      1	            __memmove_avx_unaligned_erms	/lib/x86_64-linux-gnu/libc.so.6	1632656	980	0	33	0	0	0	0	0	0	0	0
+        66	        17	     13656	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+        67	       207	    618583	    1	      1	[Loop at line 3049 in __GI___libc_malloc]	/lib/x86_64-linux-gnu/libc.so.6	618574,618968,619096,619360	361,63,259,107	0	35	0	0	0	0	0	0	0	0
+        68	       162	     12067	    1	      0	                     [Loop@0x2f10 in up]	/home/stefan/git/asl/team36/src/alg2.out	12048	45	12093	21	0	0	0	0	0	0	0	0
+        69	       173	     15633	    1	      0	   [Loop@0x3d08 in knn_mc_approximation]	/home/stefan/git/asl/team36/src/alg2.out	15624,16816,16848,16904,16920,16936,16944,16976	676,30,11,10,10,7,10,125	16300	3	0	0	0	0	0	0	0	0
+        70	       133	     12960	    1	      0	                   [Loop@0x3290 in down]	/home/stefan/git/asl/team36/src/alg2.out	12944	46	12990	10	0	0	0	0	0	0	0	0
+        71	       121	     15410	    1	      0	   [Loop@0x3c18 in knn_mc_approximation]	/home/stefan/git/asl/team36/src/alg2.out	15384	41	15425	14	0	0	0	0	0	0	0	0
+        72	        17	     13978	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+        73	       132	     13191	    1	      0	                   [Loop@0x3028 in down]	/home/stefan/git/asl/team36/src/alg2.out	12328,12824,13232,13318	493,401,40,296	13296,13272	12	0	0	0	0	0	0	0	0
+        74	       150	     13171	    1	      0	                   [Loop@0x3350 in down]	/home/stefan/git/asl/team36/src/alg2.out	13136	45	13181	17	0	0	0	0	0	0	0	0
+        75	       133	     12980	    1	      0	                   [Loop@0x3290 in down]	/home/stefan/git/asl/team36/src/alg2.out	12944	46	12990	10	0	0	0	0	0	0	0	0
+        76	       209	   1633089	    1	      1	[Loop at line 405 in __memmove_avx_unaligned_erms]	/lib/x86_64-linux-gnu/libc.so.6	1633089	68	0	32	0	0	0	0	0	0	0	0
+        77	        14	    277904	    0	      1	                                __random	/lib/x86_64-linux-gnu/libc.so.6	277904	183	0	28	0	0	0	0	0	0	0	0
+        78	        54	   1633176	    0	      1	            __memmove_avx_unaligned_erms	/lib/x86_64-linux-gnu/libc.so.6	1632656	980	0	33	0	0	0	0	0	0	0	0
+        79	       197	    620996	    0	      1	                               _int_free	/lib/x86_64-linux-gnu/libc.so.6	620931,621360,621568,622208,622240,623633,624350	237,48,608,16,1388,701,197	0	29	0	1	0	0	0	0	0	0
+        80	        64	   1633176	    0	      1	            __memmove_avx_unaligned_erms	/lib/x86_64-linux-gnu/libc.so.6	1632656	980	0	33	0	0	0	0	0	0	0	0
+        81	       180	     16226	    1	      0	   [Loop@0x3f60 in knn_mc_approximation]	/home/stefan/git/asl/team36/src/alg2.out	16224,16816	29,25	16253,16841	23	0	0	0	0	0	0	0	0
+        82	       121	     15403	    1	      0	   [Loop@0x3c18 in knn_mc_approximation]	/home/stefan/git/asl/team36/src/alg2.out	15384	41	15425	14	0	0	0	0	0	0	0	0
+        83	       169	     16434	    1	      0	   [Loop@0x4000 in knn_mc_approximation]	/home/stefan/git/asl/team36/src/alg2.out	16384	62	16446	22	0	0	0	0	0	0	0	0
+        84	       218	    608588	    1	      1	      [Loop at line 3802 in _int_malloc]	/lib/x86_64-linux-gnu/libc.so.6	607674,608575,609624,609787,610097,610298	55,115,9,261,25,10	0	38	0	0	0	0	0	0	0	0
+        85	        17	     13788	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+        86	        17	     13710	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+        87	        57	    610641	    0	      1	                             _int_malloc	/lib/x86_64-linux-gnu/libc.so.6	607024	4116	0	37	0	0	0	0	0	0	0	0
+        88	       135	     13774	    1	      0	                 [Loop@0x35a8 in insert]	/home/stefan/git/asl/team36/src/alg2.out	13736	44	13780	7	0	0	0	0	0	0	0	0
+        89	        12	     14003	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+        90	       209	   1633093	    1	      1	[Loop at line 405 in __memmove_avx_unaligned_erms]	/lib/x86_64-linux-gnu/libc.so.6	1633089	68	0	32	0	0	0	0	0	0	0	0
+        91	       186	     16663	    1	      0	   [Loop@0x4110 in knn_mc_approximation]	/home/stefan/git/asl/team36/src/alg2.out	16656	14	16670	24	0	0	0	0	0	0	0	0
+        92	       221	   1633108	    1	      1	[Loop at line 405 in __memmove_avx_unaligned_erms]	/lib/x86_64-linux-gnu/libc.so.6	1633089	68	0	32	0	0	0	0	0	0	0	0
+        93	       150	     13166	    1	      0	                   [Loop@0x3350 in down]	/home/stefan/git/asl/team36/src/alg2.out	13136	45	13181	17	0	0	0	0	0	0	0	0
+        94	       127	     13920	    1	      0	                 [Loop@0x3660 in insert]	/home/stefan/git/asl/team36/src/alg2.out	13920	44	13964	9	0	0	0	0	0	0	0	0
+        95	        57	    610585	    0	      1	                             _int_malloc	/lib/x86_64-linux-gnu/libc.so.6	607024	4116	0	37	0	0	0	0	0	0	0	0
+        96	       153	     11923	    1	      0	                     [Loop@0x2e70 in up]	/home/stefan/git/asl/team36/src/alg2.out	11888	45	11933	18	0	0	0	0	0	0	0	0
+        97	       150	     13151	    1	      0	                   [Loop@0x3350 in down]	/home/stefan/git/asl/team36/src/alg2.out	13136	45	13181	17	0	0	0	0	0	0	0	0
+        98	       132	     13085	    1	      0	                   [Loop@0x3028 in down]	/home/stefan/git/asl/team36/src/alg2.out	12328,12824,13232,13318	493,401,40,296	13296,13272	12	0	0	0	0	0	0	0	0
+        99	        98	   1633176	    0	      1	            __memmove_avx_unaligned_erms	/lib/x86_64-linux-gnu/libc.so.6	1632656	980	0	33	0	0	0	0	0	0	0	0
+       100	       200	   1633148	    1	      1	[Loop at line 405 in __memmove_avx_unaligned_erms]	/lib/x86_64-linux-gnu/libc.so.6	1633089	68	0	32	0	0	0	0	0	0	0	0
+       101	       162	     12091	    1	      0	                     [Loop@0x2f10 in up]	/home/stefan/git/asl/team36/src/alg2.out	12048	45	12093	21	0	0	0	0	0	0	0	0
+       102	       121	     15417	    1	      0	   [Loop@0x3c18 in knn_mc_approximation]	/home/stefan/git/asl/team36/src/alg2.out	15384	41	15425	14	0	0	0	0	0	0	0	0
+       103	        17	     13644	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+       104	       127	     13925	    1	      0	                 [Loop@0x3660 in insert]	/home/stefan/git/asl/team36/src/alg2.out	13920	44	13964	9	0	0	0	0	0	0	0	0
+       105	        -1	     15312	    0	      0	                    knn_mc_approximation	/home/stefan/git/asl/team36/src/alg2.out	14576	2692	0	4	0	0	0	0	0	0	0	0
+       106	       105	     15344	    1	      0	   [Loop@0x3bd0 in knn_mc_approximation]	/home/stefan/git/asl/team36/src/alg2.out	15312,15624,16816,16848,16864,16904,16920,16936,16944,16960,16976	306,1097,30,11,35,10,10,7,10,13,125	16721	6	0	0	0	0	0	0	0	0
+       107	       106	     15624	    1	      0	   [Loop@0x3bf0 in knn_mc_approximation]	/home/stefan/git/asl/team36/src/alg2.out	15344,15624,16816,16848,16864,16904,16920,16936,16944,16960,16976	274,921,30,11,35,10,10,7,10,13,125	16545	5	0	0	0	0	0	0	0	0
+       108	        -1	     15661	    0	      0	                    knn_mc_approximation	/home/stefan/git/asl/team36/src/alg2.out	14576	2692	0	4	0	0	0	0	0	0	0	0
+       109	         2	     13736	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+       110	         2	     13754	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+       111	         2	     13778	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+       112	         2	     13920	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+       113	         2	     13962	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+       114	         6	     12328	    0	      0	                                    down	/home/stefan/git/asl/team36/src/alg2.out	12304	1310	0	11	0	0	0	0	0	0	0	0
+       115	       114	     12944	    1	      0	                   [Loop@0x3028 in down]	/home/stefan/git/asl/team36/src/alg2.out	12328,12824,13232,13318	493,401,40,296	13296,13272	12	0	0	0	0	0	0	0	0
+       116	         6	     12960	    0	      0	                                    down	/home/stefan/git/asl/team36/src/alg2.out	12304	1310	0	11	0	0	0	0	0	0	0	0
+       117	         2	     13765	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+       118	         2	     13770	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+       119	        12	     15312	    0	      0	                    knn_mc_approximation	/home/stefan/git/asl/team36/src/alg2.out	14576	2692	0	4	0	0	0	0	0	0	0	0
+       120	       119	     15344	    1	      0	   [Loop@0x3bd0 in knn_mc_approximation]	/home/stefan/git/asl/team36/src/alg2.out	15312,15624,16816,16848,16864,16904,16920,16936,16944,16960,16976	306,1097,30,11,35,10,10,7,10,13,125	16721	6	0	0	0	0	0	0	0	0
+       121	       120	     15384	    1	      0	   [Loop@0x3bf0 in knn_mc_approximation]	/home/stefan/git/asl/team36/src/alg2.out	15344,15624,16816,16848,16864,16904,16920,16936,16944,16960,16976	274,921,30,11,35,10,10,7,10,13,125	16545	5	0	0	0	0	0	0	0	0
+       122	        12	     15388	    0	      0	                    knn_mc_approximation	/home/stefan/git/asl/team36/src/alg2.out	14576	2692	0	4	0	0	0	0	0	0	0	0
+       123	        16	     15312	    0	      0	                    knn_mc_approximation	/home/stefan/git/asl/team36/src/alg2.out	14576	2692	0	4	0	0	0	0	0	0	0	0
+       124	       123	     15344	    1	      0	   [Loop@0x3bd0 in knn_mc_approximation]	/home/stefan/git/asl/team36/src/alg2.out	15312,15624,16816,16848,16864,16904,16920,16936,16944,16960,16976	306,1097,30,11,35,10,10,7,10,13,125	16721	6	0	0	0	0	0	0	0	0
+       125	       124	     15624	    1	      0	   [Loop@0x3bf0 in knn_mc_approximation]	/home/stefan/git/asl/team36/src/alg2.out	15344,15624,16816,16848,16864,16904,16920,16936,16944,16960,16976	274,921,30,11,35,10,10,7,10,13,125	16545	5	0	0	0	0	0	0	0	0
+       126	        16	     15661	    0	      0	                    knn_mc_approximation	/home/stefan/git/asl/team36/src/alg2.out	14576	2692	0	4	0	0	0	0	0	0	0	0
+       127	        17	     13920	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+       128	        17	     13954	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+       129	        17	     13962	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+       130	        17	     13949	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+       131	        17	     13938	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+       132	        22	     12328	    0	      0	                                    down	/home/stefan/git/asl/team36/src/alg2.out	12304	1310	0	11	0	0	0	0	0	0	0	0
+       133	       132	     12944	    1	      0	                   [Loop@0x3028 in down]	/home/stefan/git/asl/team36/src/alg2.out	12328,12824,13232,13318	493,401,40,296	13296,13272	12	0	0	0	0	0	0	0	0
+       134	        22	     12964	    0	      0	                                    down	/home/stefan/git/asl/team36/src/alg2.out	12304	1310	0	11	0	0	0	0	0	0	0	0
+       135	        17	     13736	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+       136	        17	     13778	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+       137	        17	     13754	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+       138	        17	     13770	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+       139	       132	     12720	    1	      0	                   [Loop@0x3028 in down]	/home/stefan/git/asl/team36/src/alg2.out	12328,12824,13232,13318	493,401,40,296	13296,13272	12	0	0	0	0	0	0	0	0
+       140	        22	     12750	    0	      0	                                    down	/home/stefan/git/asl/team36/src/alg2.out	12304	1310	0	11	0	0	0	0	0	0	0	0
+       141	        17	     13929	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+       142	        17	     13958	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+       143	        22	     12988	    0	      0	                                    down	/home/stefan/git/asl/team36/src/alg2.out	12304	1310	0	11	0	0	0	0	0	0	0	0
+       144	       132	     12544	    1	      0	                   [Loop@0x3028 in down]	/home/stefan/git/asl/team36/src/alg2.out	12328,12824,13232,13318	493,401,40,296	13296,13272	12	0	0	0	0	0	0	0	0
+       145	        22	     12579	    0	      0	                                    down	/home/stefan/git/asl/team36/src/alg2.out	12304	1310	0	11	0	0	0	0	0	0	0	0
+       146	        22	     12563	    0	      0	                                    down	/home/stefan/git/asl/team36/src/alg2.out	12304	1310	0	11	0	0	0	0	0	0	0	0
+       147	        17	     13750	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+       148	        22	     12975	    0	      0	                                    down	/home/stefan/git/asl/team36/src/alg2.out	12304	1310	0	11	0	0	0	0	0	0	0	0
+       149	        22	     12755	    0	      0	                                    down	/home/stefan/git/asl/team36/src/alg2.out	12304	1310	0	11	0	0	0	0	0	0	0	0
+       150	       132	     13136	    1	      0	                   [Loop@0x3028 in down]	/home/stefan/git/asl/team36/src/alg2.out	12328,12824,13232,13318	493,401,40,296	13296,13272	12	0	0	0	0	0	0	0	0
+       151	        22	     13179	    0	      0	                                    down	/home/stefan/git/asl/team36/src/alg2.out	12304	1310	0	11	0	0	0	0	0	0	0	0
+       152	        40	     11744	    0	      0	                                      up	/home/stefan/git/asl/team36/src/alg2.out	11712	581	0	19	0	0	0	0	0	0	0	0
+       153	       152	     11888	    1	      0	                     [Loop@0x2de0 in up]	/home/stefan/git/asl/team36/src/alg2.out	11744,12208	441,85	12185	20	0	0	0	0	0	0	0	0
+       154	        40	     11931	    0	      0	                                      up	/home/stefan/git/asl/team36/src/alg2.out	11712	581	0	19	0	0	0	0	0	0	0	0
+       155	        22	     12735	    0	      0	                                    down	/home/stefan/git/asl/team36/src/alg2.out	12304	1310	0	11	0	0	0	0	0	0	0	0
+       156	        17	     13765	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+       157	        22	     12587	    0	      0	                                    down	/home/stefan/git/asl/team36/src/alg2.out	12304	1310	0	11	0	0	0	0	0	0	0	0
+       158	        22	     12763	    0	      0	                                    down	/home/stefan/git/asl/team36/src/alg2.out	12304	1310	0	11	0	0	0	0	0	0	0	0
+       159	        22	     12739	    0	      0	                                    down	/home/stefan/git/asl/team36/src/alg2.out	12304	1310	0	11	0	0	0	0	0	0	0	0
+       160	        22	     12892	    0	      0	                                    down	/home/stefan/git/asl/team36/src/alg2.out	12304	1310	0	11	0	0	0	0	0	0	0	0
+       161	        17	     13934	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+       162	       152	     12048	    1	      0	                     [Loop@0x2de0 in up]	/home/stefan/git/asl/team36/src/alg2.out	11744,12208	441,85	12185	20	0	0	0	0	0	0	0	0
+       163	        40	     12078	    0	      0	                                      up	/home/stefan/git/asl/team36/src/alg2.out	11712	581	0	19	0	0	0	0	0	0	0	0
+       164	        40	     11907	    0	      0	                                      up	/home/stefan/git/asl/team36/src/alg2.out	11712	581	0	19	0	0	0	0	0	0	0	0
+       165	        22	     12356	    0	      0	                                    down	/home/stefan/git/asl/team36/src/alg2.out	12304	1310	0	11	0	0	0	0	0	0	0	0
+       166	        22	     12559	    0	      0	                                    down	/home/stefan/git/asl/team36/src/alg2.out	12304	1310	0	11	0	0	0	0	0	0	0	0
+       167	        17	     13945	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+       168	        22	     13155	    0	      0	                                    down	/home/stefan/git/asl/team36/src/alg2.out	12304	1310	0	11	0	0	0	0	0	0	0	0
+       169	       120	     16384	    1	      0	   [Loop@0x3bf0 in knn_mc_approximation]	/home/stefan/git/asl/team36/src/alg2.out	15344,15624,16816,16848,16864,16904,16920,16936,16944,16960,16976	274,921,30,11,35,10,10,7,10,13,125	16545	5	0	0	0	0	0	0	0	0
+       170	        12	     16391	    0	      0	                    knn_mc_approximation	/home/stefan/git/asl/team36/src/alg2.out	14576	2692	0	4	0	0	0	0	0	0	0	0
+       171	        22	     12574	    0	      0	                                    down	/home/stefan/git/asl/team36/src/alg2.out	12304	1310	0	11	0	0	0	0	0	0	0	0
+       172	        40	     12067	    0	      0	                                      up	/home/stefan/git/asl/team36/src/alg2.out	11712	581	0	19	0	0	0	0	0	0	0	0
+       173	       120	     15624	    1	      0	   [Loop@0x3bf0 in knn_mc_approximation]	/home/stefan/git/asl/team36/src/alg2.out	15344,15624,16816,16848,16864,16904,16920,16936,16944,16960,16976	274,921,30,11,35,10,10,7,10,13,125	16545	5	0	0	0	0	0	0	0	0
+       174	        12	     15633	    0	      0	                    knn_mc_approximation	/home/stefan/git/asl/team36/src/alg2.out	14576	2692	0	4	0	0	0	0	0	0	0	0
+       175	        22	     12960	    0	      0	                                    down	/home/stefan/git/asl/team36/src/alg2.out	12304	1310	0	11	0	0	0	0	0	0	0	0
+       176	        12	     15410	    0	      0	                    knn_mc_approximation	/home/stefan/git/asl/team36/src/alg2.out	14576	2692	0	4	0	0	0	0	0	0	0	0
+       177	        22	     13191	    0	      0	                                    down	/home/stefan/git/asl/team36/src/alg2.out	12304	1310	0	11	0	0	0	0	0	0	0	0
+       178	        22	     13171	    0	      0	                                    down	/home/stefan/git/asl/team36/src/alg2.out	12304	1310	0	11	0	0	0	0	0	0	0	0
+       179	        22	     12980	    0	      0	                                    down	/home/stefan/git/asl/team36/src/alg2.out	12304	1310	0	11	0	0	0	0	0	0	0	0
+       180	       173	     16224	    1	      0	   [Loop@0x3d08 in knn_mc_approximation]	/home/stefan/git/asl/team36/src/alg2.out	15624,16816,16848,16904,16920,16936,16944,16976	676,30,11,10,10,7,10,125	16300	3	0	0	0	0	0	0	0	0
+       181	        12	     16226	    0	      0	                    knn_mc_approximation	/home/stefan/git/asl/team36/src/alg2.out	14576	2692	0	4	0	0	0	0	0	0	0	0
+       182	        12	     15403	    0	      0	                    knn_mc_approximation	/home/stefan/git/asl/team36/src/alg2.out	14576	2692	0	4	0	0	0	0	0	0	0	0
+       183	        12	     16434	    0	      0	                    knn_mc_approximation	/home/stefan/git/asl/team36/src/alg2.out	14576	2692	0	4	0	0	0	0	0	0	0	0
+       184	        17	     13774	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+       185	       119	     16624	    1	      0	   [Loop@0x3bd0 in knn_mc_approximation]	/home/stefan/git/asl/team36/src/alg2.out	15312,15624,16816,16848,16864,16904,16920,16936,16944,16960,16976	306,1097,30,11,35,10,10,7,10,13,125	16721	6	0	0	0	0	0	0	0	0
+       186	       185	     16656	    1	      0	   [Loop@0x40f0 in knn_mc_approximation]	/home/stefan/git/asl/team36/src/alg2.out	16624	64	16688	25	0	0	0	0	0	0	0	0
+       187	        12	     16663	    0	      0	                    knn_mc_approximation	/home/stefan/git/asl/team36/src/alg2.out	14576	2692	0	4	0	0	0	0	0	0	0	0
+       188	        22	     13166	    0	      0	                                    down	/home/stefan/git/asl/team36/src/alg2.out	12304	1310	0	11	0	0	0	0	0	0	0	0
+       189	        17	     13920	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+       190	        40	     11923	    0	      0	                                      up	/home/stefan/git/asl/team36/src/alg2.out	11712	581	0	19	0	0	0	0	0	0	0	0
+       191	        22	     13151	    0	      0	                                    down	/home/stefan/git/asl/team36/src/alg2.out	12304	1310	0	11	0	0	0	0	0	0	0	0
+       192	        22	     13085	    0	      0	                                    down	/home/stefan/git/asl/team36/src/alg2.out	12304	1310	0	11	0	0	0	0	0	0	0	0
+       193	        40	     12091	    0	      0	                                      up	/home/stefan/git/asl/team36/src/alg2.out	11712	581	0	19	0	0	0	0	0	0	0	0
+       194	        12	     15417	    0	      0	                    knn_mc_approximation	/home/stefan/git/asl/team36/src/alg2.out	14576	2692	0	4	0	0	0	0	0	0	0	0
+       195	        17	     13925	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2.out	13616	575	0	8	0	0	0	0	0	0	0	0
+       196	        17	    620914	    0	      1	                                   __GI_	/lib/x86_64-linux-gnu/libc.so.6	620816	3731	0	31	0	0	0	0	0	0	0	0
+       197	       196	    620931	    1	      1	            [Loop at line 3131 in __GI_]	/lib/x86_64-linux-gnu/libc.so.6	620914,621512,621568,622122,622779	140,17,74,86,120	0	30	0	0	0	0	0	0	0	0
+       198	       196	    621032	    1	      1	            [Loop at line 3131 in __GI_]	/lib/x86_64-linux-gnu/libc.so.6	620914,621512,621568,622122,622779	140,17,74,86,120	0	30	0	0	0	0	0	0	0	0
+       199	        17	    621032	    0	      1	                                   __GI_	/lib/x86_64-linux-gnu/libc.so.6	620816	3731	0	31	0	0	0	0	0	0	0	0
+       200	        48	   1633089	    0	      1	            __memmove_avx_unaligned_erms	/lib/x86_64-linux-gnu/libc.so.6	1632656	980	0	33	0	0	0	0	0	0	0	0
+       201	        48	   1633126	    0	      1	            __memmove_avx_unaligned_erms	/lib/x86_64-linux-gnu/libc.so.6	1632656	980	0	33	0	0	0	0	0	0	0	0
+       202	        17	    620931	    0	      1	                                   __GI_	/lib/x86_64-linux-gnu/libc.so.6	620816	3731	0	31	0	0	0	0	0	0	0	0
+       203	       202	    621360	    0	      1	                               _int_free	/lib/x86_64-linux-gnu/libc.so.6	620931,621360,621568,622208,622240,623633,624350	237,48,608,16,1388,701,197	0	29	0	1	0	0	0	0	0	0
+       204	        17	    622080	    0	      1	                                   __GI_	/lib/x86_64-linux-gnu/libc.so.6	620816	3731	0	31	0	0	0	0	0	0	0	0
+       205	        56	    618574	    0	      1	                      __GI___libc_malloc	/lib/x86_64-linux-gnu/libc.so.6	618528	939	0	36	0	0	0	0	0	0	0	0
+       206	        56	    618667	    0	      1	                      __GI___libc_malloc	/lib/x86_64-linux-gnu/libc.so.6	618528	939	0	36	0	0	0	0	0	0	0	0
+       207	        66	    618574	    0	      1	                      __GI___libc_malloc	/lib/x86_64-linux-gnu/libc.so.6	618528	939	0	36	0	0	0	0	0	0	0	0
+       208	        66	    618583	    0	      1	                      __GI___libc_malloc	/lib/x86_64-linux-gnu/libc.so.6	618528	939	0	36	0	0	0	0	0	0	0	0
+       209	        64	   1633089	    0	      1	            __memmove_avx_unaligned_erms	/lib/x86_64-linux-gnu/libc.so.6	1632656	980	0	33	0	0	0	0	0	0	0	0
+       210	        64	   1633089	    0	      1	            __memmove_avx_unaligned_erms	/lib/x86_64-linux-gnu/libc.so.6	1632656	980	0	33	0	0	0	0	0	0	0	0
+       211	       196	    620996	    1	      1	            [Loop at line 3131 in __GI_]	/lib/x86_64-linux-gnu/libc.so.6	620914,621512,621568,622122,622779	140,17,74,86,120	0	30	0	0	0	0	0	0	0	0
+       212	        17	    620996	    0	      1	                                   __GI_	/lib/x86_64-linux-gnu/libc.so.6	620816	3731	0	31	0	0	0	0	0	0	0	0
+       213	        57	    607674	    0	      1	                             _int_malloc	/lib/x86_64-linux-gnu/libc.so.6	607024	4116	0	37	0	0	0	0	0	0	0	0
+       214	       213	    607674	    1	      1	      [Loop at line 3801 in _int_malloc]	/lib/x86_64-linux-gnu/libc.so.6	607674,608240,608464,608560,608760,608880,609200,609232,609304,609376,609584,609624,609696,610298,610431	344,29,54,193,58,144,24,42,63,110,21,46,470,91,16	0	43	0	0	0	0	0	0	0	0
+       215	       214	    607674	    1	      1	      [Loop at line 3801 in _int_malloc]	/lib/x86_64-linux-gnu/libc.so.6	607674,608240,608464,608560,608760,608880,608948,609200,609232,609304,609376,609584,609624,609696,610298,610431	344,29,54,193,58,10,76,24,42,63,110,21,46,470,91,16	0	42	0	0	0	0	0	0	0	0
+       216	       215	    607674	    1	      1	      [Loop at line 3801 in _int_malloc]	/lib/x86_64-linux-gnu/libc.so.6	607674,608240,608464,608560,608760,608880,609000,609200,609232,609376,609584,609624,609696,609787,610298	344,29,54,130,58,10,24,24,42,47,21,9,28,335,10	0	41	0	0	0	0	0	0	0	0
+       217	       216	    607674	    1	      1	      [Loop at line 3759 in _int_malloc]	/lib/x86_64-linux-gnu/libc.so.6	607674,608240,608464,608560,608760,608880,609200,609232,609376,609584,609624,609696,609787,610298	344,29,54,130,58,10,24,42,47,21,9,28,335,10	0	40	0	0	0	0	0	0	0	0
+       218	       217	    607674	    1	      1	      [Loop at line 3802 in _int_malloc]	/lib/x86_64-linux-gnu/libc.so.6	607674,607832,608560,608760,609200,609376,609584,609624,609696,609787,610298	82,186,130,58,24,47,21,9,28,335,10	0	39	0	0	0	0	0	0	0	0
+       219	        57	    608588	    0	      1	                             _int_malloc	/lib/x86_64-linux-gnu/libc.so.6	607024	4116	0	37	0	0	0	0	0	0	0	0
+       220	        64	   1633093	    0	      1	            __memmove_avx_unaligned_erms	/lib/x86_64-linux-gnu/libc.so.6	1632656	980	0	33	0	0	0	0	0	0	0	0
+       221	        54	   1633089	    0	      1	            __memmove_avx_unaligned_erms	/lib/x86_64-linux-gnu/libc.so.6	1632656	980	0	33	0	0	0	0	0	0	0	0
+       222	        54	   1633108	    0	      1	            __memmove_avx_unaligned_erms	/lib/x86_64-linux-gnu/libc.so.6	1632656	980	0	33	0	0	0	0	0	0	0	0
+       223	        48	   1633148	    0	      1	            __memmove_avx_unaligned_erms	/lib/x86_64-linux-gnu/libc.so.6	1632656	980	0	33	0	0	0	0	0	0	0	0
+       224	        -1	         0	    0	      0	                      [Outside any loop]	n/a	0	0	0	44	0	0	0	0	0	0	0	0

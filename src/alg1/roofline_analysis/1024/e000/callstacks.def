@@ -1,0 +1,93 @@
+# callstacks file version: 8
+#    rowid	    parent	       rva	 loop	 system	                                function	binary	instance_start_rva	instance_size	instance_end_rva	finst_rowid	roi	is_inlined	jit_method_id	tripcounts_roi	flops_roi	cachesim_roi	data_transfer_roi	projection_roi
+         1	        -1	      5200	    0	      0	                                  _start	/home/stefan/git/asl/team36/src/alg1.out	5200	43	0	1	0	0	0	0	0	0	0	0
+         2	        -1	      5241	    0	      0	                                  _start	/home/stefan/git/asl/team36/src/alg1.out	5200	43	0	1	0	0	0	0	0	0	0	0
+         3	         2	    138374	    0	      1	                       __libc_start_main	/lib/x86_64-linux-gnu/libc.so.6	138144	446	0	16	0	0	0	0	0	0	0	0
+         4	         3	      4973	    0	      0	                                    main	/home/stefan/git/asl/team36/src/alg1.out	4064	1130	0	2	0	0	0	0	0	0	0	0
+         5	        47	      8481	    1	      0	    [Loop@0x2100 in initialize_rand_mat]	/home/stefan/git/asl/team36/src/alg1.out	8448	70	8518	3	0	0	0	0	0	0	0	0
+         6	         3	      4608	    0	      0	                                    main	/home/stefan/git/asl/team36/src/alg1.out	4064	1130	0	2	0	0	0	0	0	0	0	0
+         7	        51	     16331	    1	      0	           [Loop@0x3fc0 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1.out	16320	41	16361	6	0	0	0	0	0	0	0	0
+         8	        51	     16346	    1	      0	           [Loop@0x3fc0 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1.out	16320	41	16361	6	0	0	0	0	0	0	0	0
+         9	        49	     18118	    1	      0	           [Loop@0x3ec0 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1.out	16064,17216,17232	1104,11,916	17168	9	0	0	0	0	0	0	0	0
+        10	         9	     14490	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1.out	14288	306	0	10	0	0	0	0	0	0	0	0
+        11	        55	     12029	    1	      0	                  [Loop@0x2ec2 in merge]	/home/stefan/git/asl/team36/src/alg1.out	11970	100	12088	11	0	0	0	0	0	0	0	0
+        12	        50	     16262	    1	      0	           [Loop@0x3f40 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1.out	16192,17216,17545	214,11,38	16406	8	0	0	0	0	0	0	0	0
+        13	        51	     16335	    1	      0	           [Loop@0x3fc0 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1.out	16320	41	16361	6	0	0	0	0	0	0	0	0
+        14	        51	     16359	    1	      0	           [Loop@0x3fc0 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1.out	16320	41	16361	6	0	0	0	0	0	0	0	0
+        15	        51	     16351	    1	      0	           [Loop@0x3fc0 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1.out	16320	41	16361	6	0	0	0	0	0	0	0	0
+        16	        51	     16320	    1	      0	           [Loop@0x3fc0 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1.out	16320	41	16361	6	0	0	0	0	0	0	0	0
+        17	        49	     17512	    1	      0	           [Loop@0x3ec0 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1.out	16064,17216,17232	1104,11,916	17168	9	0	0	0	0	0	0	0	0
+        18	        64	     11976	    1	      0	                  [Loop@0x2ec8 in merge]	/home/stefan/git/asl/team36/src/alg1.out	11976	49	12088,12025	13	0	0	0	0	0	0	0	0
+        19	        64	     11980	    1	      0	                  [Loop@0x2ec8 in merge]	/home/stefan/git/asl/team36/src/alg1.out	11976	49	12088,12025	13	0	0	0	0	0	0	0	0
+        20	        49	     18027	    1	      0	           [Loop@0x3ec0 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1.out	16064,17216,17232	1104,11,916	17168	9	0	0	0	0	0	0	0	0
+        21	        69	     11980	    1	      0	                  [Loop@0x2ec8 in merge]	/home/stefan/git/asl/team36/src/alg1.out	11976	49	12088,12025	13	0	0	0	0	0	0	0	0
+        22	        50	     16261	    1	      0	           [Loop@0x3f40 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1.out	16192,17216,17545	214,11,38	16406	8	0	0	0	0	0	0	0	0
+        23	        86	   1633278	    1	      1	[Loop at line 457 in __memmove_avx_unaligned_erms]	/lib/x86_64-linux-gnu/libc.so.6	1633252	72	0	17	0	0	0	0	0	0	0	0
+        24	        49	     18094	    1	      0	           [Loop@0x3ec0 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1.out	16064,17216,17232	1104,11,916	17168	9	0	0	0	0	0	0	0	0
+        25	        24	     14503	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1.out	14288	306	0	10	0	0	0	0	0	0	0	0
+        26	        25	     14503	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1.out	14288	306	0	10	0	0	0	0	0	0	0	0
+        27	        26	     14529	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1.out	14288	306	0	10	0	0	0	0	0	0	0	0
+        28	        74	     14204	    1	      0	                  [Loop@0x3778 in merge]	/home/stefan/git/asl/team36/src/alg1.out	14200	27	14227	14	0	0	0	0	0	0	0	0
+        29	         9	     14588	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1.out	14288	306	0	10	0	0	0	0	0	0	0	0
+        30	        29	     14588	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1.out	14288	306	0	10	0	0	0	0	0	0	0	0
+        31	        30	     14529	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1.out	14288	306	0	10	0	0	0	0	0	0	0	0
+        32	        76	     12025	    1	      0	                  [Loop@0x2ec2 in merge]	/home/stefan/git/asl/team36/src/alg1.out	11970	100	12088	11	0	0	0	0	0	0	0	0
+        33	        51	     16355	    1	      0	           [Loop@0x3fc0 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1.out	16320	41	16361	6	0	0	0	0	0	0	0	0
+        34	        51	     16339	    1	      0	           [Loop@0x3fc0 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1.out	16320	41	16361	6	0	0	0	0	0	0	0	0
+        35	        20	     14588	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1.out	14288	306	0	10	0	0	0	0	0	0	0	0
+        36	        80	     12029	    1	      0	                  [Loop@0x2ec2 in merge]	/home/stefan/git/asl/team36/src/alg1.out	11970	100	12088	11	0	0	0	0	0	0	0	0
+        37	        49	     17449	    1	      0	           [Loop@0x3ec0 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1.out	16064,17216,17232	1104,11,916	17168	9	0	0	0	0	0	0	0	0
+        38	        83	     11970	    1	      0	                  [Loop@0x2ec2 in merge]	/home/stefan/git/asl/team36/src/alg1.out	11970	100	12088	11	0	0	0	0	0	0	0	0
+        39	        86	   1633256	    1	      1	[Loop at line 457 in __memmove_avx_unaligned_erms]	/lib/x86_64-linux-gnu/libc.so.6	1633252	72	0	17	0	0	0	0	0	0	0	0
+        40	         9	     14563	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1.out	14288	306	0	10	0	0	0	0	0	0	0	0
+        41	        40	     14503	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1.out	14288	306	0	10	0	0	0	0	0	0	0	0
+        42	        41	     14503	    0	      0	                        mergeSort.part.3	/home/stefan/git/asl/team36/src/alg1.out	14288	306	0	10	0	0	0	0	0	0	0	0
+        43	        42	     11772	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1.out	11584	2703	0	12	0	0	0	0	0	0	0	0
+        44	        50	     16280	    1	      0	           [Loop@0x3f40 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1.out	16192,17216,17545	214,11,38	16406	8	0	0	0	0	0	0	0	0
+        45	        89	   1633308	    1	      1	[Loop at line 457 in __memmove_avx_unaligned_erms]	/lib/x86_64-linux-gnu/libc.so.6	1633252	72	0	17	0	0	0	0	0	0	0	0
+        46	         4	      8440	    0	      0	                     initialize_rand_mat	/home/stefan/git/asl/team36/src/alg1.out	8416	120	0	4	0	0	0	0	0	0	0	0
+        47	        46	      8448	    1	      0	    [Loop@0x20f8 in initialize_rand_mat]	/home/stefan/git/asl/team36/src/alg1.out	8440	89	8529	5	0	0	0	0	0	0	0	0
+        48	         4	      8481	    0	      0	                     initialize_rand_mat	/home/stefan/git/asl/team36/src/alg1.out	8416	120	0	4	0	0	0	0	0	0	0	0
+        49	         6	     16064	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1.out	15664	2489	0	7	0	0	0	0	0	0	0	0
+        50	        49	     16192	    1	      0	           [Loop@0x3ec0 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1.out	16064,17216,17232	1104,11,916	17168	9	0	0	0	0	0	0	0	0
+        51	        50	     16320	    1	      0	           [Loop@0x3f40 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1.out	16192,17216,17545	214,11,38	16406	8	0	0	0	0	0	0	0	0
+        52	         6	     16331	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1.out	15664	2489	0	7	0	0	0	0	0	0	0	0
+        53	         6	     16346	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1.out	15664	2489	0	7	0	0	0	0	0	0	0	0
+        54	         6	     18118	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1.out	15664	2489	0	7	0	0	0	0	0	0	0	0
+        55	        10	     11970	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1.out	11584	2703	0	12	0	0	0	0	0	0	0	0
+        56	        10	     12029	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1.out	11584	2703	0	12	0	0	0	0	0	0	0	0
+        57	         6	     16262	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1.out	15664	2489	0	7	0	0	0	0	0	0	0	0
+        58	         6	     16335	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1.out	15664	2489	0	7	0	0	0	0	0	0	0	0
+        59	         6	     16359	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1.out	15664	2489	0	7	0	0	0	0	0	0	0	0
+        60	         6	     16351	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1.out	15664	2489	0	7	0	0	0	0	0	0	0	0
+        61	         6	     16320	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1.out	15664	2489	0	7	0	0	0	0	0	0	0	0
+        62	         6	     17512	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1.out	15664	2489	0	7	0	0	0	0	0	0	0	0
+        63	        17	     11970	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1.out	11584	2703	0	12	0	0	0	0	0	0	0	0
+        64	        63	     11976	    1	      0	                  [Loop@0x2ec2 in merge]	/home/stefan/git/asl/team36/src/alg1.out	11970	100	12088	11	0	0	0	0	0	0	0	0
+        65	        17	     11976	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1.out	11584	2703	0	12	0	0	0	0	0	0	0	0
+        66	        17	     11980	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1.out	11584	2703	0	12	0	0	0	0	0	0	0	0
+        67	         6	     18027	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1.out	15664	2489	0	7	0	0	0	0	0	0	0	0
+        68	        20	     11970	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1.out	11584	2703	0	12	0	0	0	0	0	0	0	0
+        69	        68	     11976	    1	      0	                  [Loop@0x2ec2 in merge]	/home/stefan/git/asl/team36/src/alg1.out	11970	100	12088	11	0	0	0	0	0	0	0	0
+        70	        20	     11980	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1.out	11584	2703	0	12	0	0	0	0	0	0	0	0
+        71	         6	     16261	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1.out	15664	2489	0	7	0	0	0	0	0	0	0	0
+        72	         6	     18094	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1.out	15664	2489	0	7	0	0	0	0	0	0	0	0
+        73	        27	     13141	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1.out	11584	2703	0	12	0	0	0	0	0	0	0	0
+        74	        73	     14200	    1	      0	                  [Loop@0x3355 in merge]	/home/stefan/git/asl/team36/src/alg1.out	13141,14168,14247,14267	928,64,10,20	14069	15	0	0	0	0	0	0	0	0
+        75	        27	     14204	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1.out	11584	2703	0	12	0	0	0	0	0	0	0	0
+        76	        31	     11970	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1.out	11584	2703	0	12	0	0	0	0	0	0	0	0
+        77	        31	     12025	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1.out	11584	2703	0	12	0	0	0	0	0	0	0	0
+        78	         6	     16355	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1.out	15664	2489	0	7	0	0	0	0	0	0	0	0
+        79	         6	     16339	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1.out	15664	2489	0	7	0	0	0	0	0	0	0	0
+        80	        35	     11970	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1.out	11584	2703	0	12	0	0	0	0	0	0	0	0
+        81	        35	     12029	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1.out	11584	2703	0	12	0	0	0	0	0	0	0	0
+        82	         6	     17449	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1.out	15664	2489	0	7	0	0	0	0	0	0	0	0
+        83	        37	     11970	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1.out	11584	2703	0	12	0	0	0	0	0	0	0	0
+        84	        37	     11970	    0	      0	                                   merge	/home/stefan/git/asl/team36/src/alg1.out	11584	2703	0	12	0	0	0	0	0	0	0	0
+        85	         6	     16280	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1.out	15664	2489	0	7	0	0	0	0	0	0	0	0
+        86	        22	   1633252	    0	      1	            __memmove_avx_unaligned_erms	/lib/x86_64-linux-gnu/libc.so.6	1632656	980	0	18	0	0	0	0	0	0	0	0
+        87	        22	   1633278	    0	      1	            __memmove_avx_unaligned_erms	/lib/x86_64-linux-gnu/libc.so.6	1632656	980	0	18	0	0	0	0	0	0	0	0
+        88	        22	   1633256	    0	      1	            __memmove_avx_unaligned_erms	/lib/x86_64-linux-gnu/libc.so.6	1632656	980	0	18	0	0	0	0	0	0	0	0
+        89	        44	   1633252	    0	      1	            __memmove_avx_unaligned_erms	/lib/x86_64-linux-gnu/libc.so.6	1632656	980	0	18	0	0	0	0	0	0	0	0
+        90	        44	   1633308	    0	      1	            __memmove_avx_unaligned_erms	/lib/x86_64-linux-gnu/libc.so.6	1632656	980	0	18	0	0	0	0	0	0	0	0
+        91	        -1	         0	    0	      0	                [Unknown stack frame(s)]	n/a	0	0	0	20	0	0	0	0	0	0	0	0

@@ -1,0 +1,12 @@
+cd opt1
+make
+cd ..
+cd opt2
+make
+cd ..
+cd opt3
+make
+cd ..
+cd opt4
+make
+cd ..

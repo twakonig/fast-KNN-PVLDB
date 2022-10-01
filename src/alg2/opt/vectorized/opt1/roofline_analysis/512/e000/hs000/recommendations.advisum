@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <!DOCTYPE IntelParallelAdvisorSummaryCollection SYSTEM  "IntelParallelAdvisorSummaryCollection.dtd"> -->
+
+<IntelParallelAdvisorSummary version="" 
+                             kind="DATAKIND_SURVEY_EX" >
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="insert"
+           is_vectorized="1"
+           self_time="5.959908E-01"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="12"
+           priority="0">
+           <recommendation id="rec_align_loop_c" title="Force the compiler to align loop code" confidence="1" gain="-1"/>
+  </hotspot>
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="knn_mc_approximation"
+           is_vectorized="0"
+           self_time="1.200032E-01"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="13"
+           priority="0">
+           <recommendation id="rec_system_functions_move_c" title="Remove system function call(s) inside loop" confidence="1" gain="-1"/>
+  </hotspot>
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="insert"
+           is_vectorized="0"
+           self_time="4.000082E-02"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="24"
+           priority="0">
+           <recommendation id="rec_align_loop_c" title="Force the compiler to align loop code" confidence="1" gain="-1"/>
+  </hotspot>
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="down"
+           is_vectorized="1"
+           self_time="3.599967E-02"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="21"
+           priority="0">
+           <recommendation id="rec_align_loop_c" title="Force the compiler to align loop code" confidence="1" gain="-1"/>
+  </hotspot>
+</IntelParallelAdvisorSummary >

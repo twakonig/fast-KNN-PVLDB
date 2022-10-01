@@ -1,0 +1,62 @@
+# callstacks file version: 8
+#    rowid	    parent	       rva	 loop	 system	                                function	binary	instance_start_rva	instance_size	instance_end_rva	finst_rowid	roi	is_inlined	jit_method_id	tripcounts_roi	flops_roi	cachesim_roi	data_transfer_roi	projection_roi
+         1	        -1	      5168	    0	      0	                                  _start	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	5168	43	0	1	0	0	0	0	0	0	0	0
+         2	        -1	      4580	    0	      0	                                    main	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	4048	1080	0	2	0	0	0	0	0	0	0	0
+         3	        35	     10884	    1	      0	   [Loop@0x2a60 in knn_mc_approximation]	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	10848,11424,11472	212,38,11	11060	3	0	0	0	0	0	0	0	0
+         4	         3	      9654	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	9456	311	0	7	0	0	0	0	0	0	0	0
+         5	        37	      8344	    1	      0	             [Loop@0x2008 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	8200	150	8350	8	0	0	0	0	0	0	0	0
+         6	        37	      8273	    1	      0	             [Loop@0x2008 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	8200	150	8350	8	0	0	0	0	0	0	0	0
+         7	         3	      9567	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	9456	311	0	7	0	0	0	0	0	0	0	0
+         8	        40	      8344	    1	      0	             [Loop@0x2008 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	8200	150	8350	8	0	0	0	0	0	0	0	0
+         9	        40	      8340	    1	      0	             [Loop@0x2008 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	8200	150	8350	8	0	0	0	0	0	0	0	0
+        10	        37	      8340	    1	      0	             [Loop@0x2008 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	8200	150	8350	8	0	0	0	0	0	0	0	0
+        11	         3	      9549	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	9456	311	0	7	0	0	0	0	0	0	0	0
+        12	        55	   1633302	    1	      1	[Loop at line 457 in __memmove_avx_unaligned_erms]	/lib/x86_64-linux-gnu/libc.so.6	1633252	72	0	12	0	0	0	0	0	0	0	0
+        13	         3	      9661	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	9456	311	0	7	0	0	0	0	0	0	0	0
+        14	        37	      8310	    1	      0	             [Loop@0x2008 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	8200	150	8350	8	0	0	0	0	0	0	0	0
+        15	        37	      8233	    1	      0	             [Loop@0x2008 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	8200	150	8350	8	0	0	0	0	0	0	0	0
+        16	        46	     10588	    1	      0	   [Loop@0x2958 in knn_mc_approximation]	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	10584	40	10624	10	0	0	0	0	0	0	0	0
+        17	        16	    279448	    0	      1	                                    rand	/lib/x86_64-linux-gnu/libc.so.6	279440	14	0	14	0	0	0	0	0	0	0	0
+        18	        17	    277904	    0	      1	                                __random	/lib/x86_64-linux-gnu/libc.so.6	277904	183	0	15	0	0	0	0	0	0	0	0
+        19	         3	      9720	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	9456	311	0	7	0	0	0	0	0	0	0	0
+        20	        19	      9276	    0	      0	                                    down	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	8880	562	0	11	0	0	0	0	0	0	0	0
+        21	        48	      8310	    1	      0	             [Loop@0x2008 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	8200	150	8350	8	0	0	0	0	0	0	0	0
+        22	        19	      9055	    0	      0	                                    down	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	8880	562	0	11	0	0	0	0	0	0	0	0
+        23	        58	    622080	    0	      1	                              tcache_put	/lib/x86_64-linux-gnu/libc.so.6	621360,622080,622384	48,42,63	0	16	0	1	0	0	0	0	0	0
+        24	        46	     10596	    1	      0	   [Loop@0x2958 in knn_mc_approximation]	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	10584	40	10624	10	0	0	0	0	0	0	0	0
+        25	        19	      9083	    0	      0	                                    down	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	8880	562	0	11	0	0	0	0	0	0	0	0
+        26	        51	      8340	    1	      0	             [Loop@0x2008 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	8200	150	8350	8	0	0	0	0	0	0	0	0
+        27	        40	      8310	    1	      0	             [Loop@0x2008 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	8200	150	8350	8	0	0	0	0	0	0	0	0
+        28	        40	      8331	    1	      0	             [Loop@0x2008 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	8200	150	8350	8	0	0	0	0	0	0	0	0
+        29	         3	      9640	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	9456	311	0	7	0	0	0	0	0	0	0	0
+        30	        29	   1633236	    0	      1	            __memmove_avx_unaligned_erms	/lib/x86_64-linux-gnu/libc.so.6	1632656	980	0	13	0	0	0	0	0	0	0	0
+        31	         3	      9617	    0	      0	                                  insert	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	9456	311	0	7	0	0	0	0	0	0	0	0
+        32	        16	    279444	    0	      1	                                    rand	/lib/x86_64-linux-gnu/libc.so.6	279440	14	0	14	0	0	0	0	0	0	0	0
+        33	         2	     10512	    0	      0	                    knn_mc_approximation	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	10160	1360	0	4	0	0	0	0	0	0	0	0
+        34	        33	     10544	    1	      0	   [Loop@0x2910 in knn_mc_approximation]	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	10512,10848,11424,11472,11488	334,507,38,11,27	11355	6	0	0	0	0	0	0	0	0
+        35	        34	     10848	    1	      0	   [Loop@0x2930 in knn_mc_approximation]	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	10544,10848,11424,11472,11488	302,351,38,11,27	11199	5	0	0	0	0	0	0	0	0
+        36	         2	     10884	    0	      0	                    knn_mc_approximation	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	10160	1360	0	4	0	0	0	0	0	0	0	0
+        37	         4	      8200	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	8160	199	0	9	0	0	0	0	0	0	0	0
+        38	         4	      8344	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	8160	199	0	9	0	0	0	0	0	0	0	0
+        39	         4	      8273	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	8160	199	0	9	0	0	0	0	0	0	0	0
+        40	         7	      8200	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	8160	199	0	9	0	0	0	0	0	0	0	0
+        41	         7	      8344	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	8160	199	0	9	0	0	0	0	0	0	0	0
+        42	         7	      8340	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	8160	199	0	9	0	0	0	0	0	0	0	0
+        43	         4	      8340	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	8160	199	0	9	0	0	0	0	0	0	0	0
+        44	         4	      8310	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	8160	199	0	9	0	0	0	0	0	0	0	0
+        45	         4	      8233	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	8160	199	0	9	0	0	0	0	0	0	0	0
+        46	        34	     10584	    1	      0	   [Loop@0x2930 in knn_mc_approximation]	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	10544,10848,11424,11472,11488	302,351,38,11,27	11199	5	0	0	0	0	0	0	0	0
+        47	         2	     10588	    0	      0	                    knn_mc_approximation	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	10160	1360	0	4	0	0	0	0	0	0	0	0
+        48	        20	      8200	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	8160	199	0	9	0	0	0	0	0	0	0	0
+        49	        20	      8310	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	8160	199	0	9	0	0	0	0	0	0	0	0
+        50	         2	     10596	    0	      0	                    knn_mc_approximation	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	10160	1360	0	4	0	0	0	0	0	0	0	0
+        51	        25	      8200	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	8160	199	0	9	0	0	0	0	0	0	0	0
+        52	        25	      8340	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	8160	199	0	9	0	0	0	0	0	0	0	0
+        53	         7	      8310	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	8160	199	0	9	0	0	0	0	0	0	0	0
+        54	         7	      8331	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg2/opt/scalar/opt1/alg2opt1.out	8160	199	0	9	0	0	0	0	0	0	0	0
+        55	        11	   1633252	    0	      1	            __memmove_avx_unaligned_erms	/lib/x86_64-linux-gnu/libc.so.6	1632656	980	0	13	0	0	0	0	0	0	0	0
+        56	        11	   1633302	    0	      1	            __memmove_avx_unaligned_erms	/lib/x86_64-linux-gnu/libc.so.6	1632656	980	0	13	0	0	0	0	0	0	0	0
+        57	         3	    620931	    0	      1	                                   __GI_	/lib/x86_64-linux-gnu/libc.so.6	620816	3731	0	17	0	0	0	0	0	0	0	0
+        58	        57	    621360	    0	      1	                               _int_free	/lib/x86_64-linux-gnu/libc.so.6	620931,621360,621568,622208,622240,623633,624350	237,48,608,16,1388,701,197	0	18	0	1	0	0	0	0	0	0
+        59	         3	    622080	    0	      1	                                   __GI_	/lib/x86_64-linux-gnu/libc.so.6	620816	3731	0	17	0	0	0	0	0	0	0	0
+        60	        -1	         0	    0	      0	                [Unknown stack frame(s)]	n/a	0	0	0	20	0	0	0	0	0	0	0	0

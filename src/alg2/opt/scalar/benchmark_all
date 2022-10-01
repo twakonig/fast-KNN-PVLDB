@@ -1,0 +1,13 @@
+./compile_all
+cd opt1
+./benchmarking.sh
+cd ..
+cd opt2
+./benchmarking.sh
+cd ..
+cd opt3
+./benchmarking.sh
+cd ..
+cd opt4
+./benchmarking.sh
+cd ..

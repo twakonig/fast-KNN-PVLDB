@@ -1,0 +1,33 @@
+# callstacks file version: 8
+#    rowid	    parent	       rva	 loop	 system	                                function	binary	instance_start_rva	instance_size	instance_end_rva	finst_rowid	roi	is_inlined	jit_method_id	tripcounts_roi	flops_roi	cachesim_roi	data_transfer_roi	projection_roi
+         1	        -1	      5216	    0	      0	                                  _start	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt2/alg1opt2.out	5216	43	0	1	0	0	0	0	0	0	0	0
+         2	        -1	      5257	    0	      0	                                  _start	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt2/alg1opt2.out	5216	43	0	1	0	0	0	0	0	0	0	0
+         3	         2	    138374	    0	      1	                       __libc_start_main	/lib/x86_64-linux-gnu/libc.so.6	138144	446	0	9	0	0	0	0	0	0	0	0
+         4	         3	      4624	    0	      0	                                    main	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt2/alg1opt2.out	4080	1128	0	2	0	0	0	0	0	0	0	0
+         5	        17	     85091	    1	      0	          [Loop@0x14c10 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt2/alg1opt2.out	85008	105	85113	3	0	0	0	0	0	0	0	0
+         6	        19	     84772	    1	      0	            [Loop@0x14a90 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt2/alg1opt2.out	84624	162	84786	6	0	0	0	0	0	0	0	0
+         7	        19	     84764	    1	      0	            [Loop@0x14a90 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt2/alg1opt2.out	84624	162	84786	6	0	0	0	0	0	0	0	0
+         8	        19	     84776	    1	      0	            [Loop@0x14a90 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt2/alg1opt2.out	84624	162	84786	6	0	0	0	0	0	0	0	0
+         9	        19	     84780	    1	      0	            [Loop@0x14a90 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt2/alg1opt2.out	84624	162	84786	6	0	0	0	0	0	0	0	0
+        10	        24	     85048	    1	      0	          [Loop@0x14c38 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt2/alg1opt2.out	85048	30	85078	8	0	0	0	0	0	0	0	0
+        11	        19	     84747	    1	      0	            [Loop@0x14a90 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt2/alg1opt2.out	84624	162	84786	6	0	0	0	0	0	0	0	0
+        12	        17	     85037	    1	      0	          [Loop@0x14c10 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt2/alg1opt2.out	85008	105	85113	3	0	0	0	0	0	0	0	0
+        13	        19	     84768	    1	      0	            [Loop@0x14a90 in l2norm_opt]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt2/alg1opt2.out	84624	162	84786	6	0	0	0	0	0	0	0	0
+        14	        24	     85058	    1	      0	          [Loop@0x14c38 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt2/alg1opt2.out	85048	30	85078	8	0	0	0	0	0	0	0	0
+        15	        24	     85069	    1	      0	          [Loop@0x14c38 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt2/alg1opt2.out	85048	30	85078	8	0	0	0	0	0	0	0	0
+        16	         4	     84952	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt2/alg1opt2.out	84800	480	0	4	0	0	0	0	0	0	0	0
+        17	        16	     85008	    1	      0	          [Loop@0x14bd8 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt2/alg1opt2.out	84952,85247	265,28	85217	5	0	0	0	0	0	0	0	0
+        18	         4	     85091	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt2/alg1opt2.out	84800	480	0	4	0	0	0	0	0	0	0	0
+        19	         5	     84624	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt2/alg1opt2.out	84592	205	0	7	0	0	0	0	0	0	0	0
+        20	         5	     84772	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt2/alg1opt2.out	84592	205	0	7	0	0	0	0	0	0	0	0
+        21	         5	     84764	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt2/alg1opt2.out	84592	205	0	7	0	0	0	0	0	0	0	0
+        22	         5	     84776	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt2/alg1opt2.out	84592	205	0	7	0	0	0	0	0	0	0	0
+        23	         5	     84780	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt2/alg1opt2.out	84592	205	0	7	0	0	0	0	0	0	0	0
+        24	        17	     85048	    1	      0	          [Loop@0x14c10 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt2/alg1opt2.out	85008	105	85113	3	0	0	0	0	0	0	0	0
+        25	         4	     85048	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt2/alg1opt2.out	84800	480	0	4	0	0	0	0	0	0	0	0
+        26	         5	     84747	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt2/alg1opt2.out	84592	205	0	7	0	0	0	0	0	0	0	0
+        27	         4	     85037	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt2/alg1opt2.out	84800	480	0	4	0	0	0	0	0	0	0	0
+        28	         5	     84768	    0	      0	                              l2norm_opt	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt2/alg1opt2.out	84592	205	0	7	0	0	0	0	0	0	0	0
+        29	         4	     85058	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt2/alg1opt2.out	84800	480	0	4	0	0	0	0	0	0	0	0
+        30	         4	     85069	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt2/alg1opt2.out	84800	480	0	4	0	0	0	0	0	0	0	0
+        31	        -1	         0	    0	      0	                [Unknown stack frame(s)]	n/a	0	0	0	11	0	0	0	0	0	0	0	0

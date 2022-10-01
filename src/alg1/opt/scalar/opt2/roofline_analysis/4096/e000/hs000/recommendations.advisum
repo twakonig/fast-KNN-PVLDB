@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <!DOCTYPE IntelParallelAdvisorSummaryCollection SYSTEM  "IntelParallelAdvisorSummaryCollection.dtd"> -->
+
+<IntelParallelAdvisorSummary version="" 
+                             kind="DATAKIND_SURVEY_EX" >
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="get_true_knn"
+           is_vectorized="0"
+           self_time="5.489583E+01"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="8"
+           priority="0">
+           <recommendation id="rec_align_loop_c" title="Force the compiler to align loop code" confidence="1" gain="-1"/>
+  </hotspot>
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="parity_merge64"
+           is_vectorized="0"
+           self_time="2.080020E-01"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="18"
+           priority="0">
+           <recommendation id="rec_indirect_call_move_c" title="Remove indirect call(s) inside loop" confidence="1" gain="-1"/>
+  </hotspot>
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="initialize_rand_mat"
+           is_vectorized="0"
+           self_time="1.519723E-01"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="4"
+           priority="0">
+           <recommendation id="rec_type_conversions_smallest_c" title="Use the smallest data type" confidence="1" gain="-1"/>
+  </hotspot>
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="initialize_rand_mat"
+           is_vectorized="0"
+           self_time="1.519723E-01"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="4"
+           priority="0">
+           <recommendation id="rec_system_functions_move_c" title="Remove system function call(s) inside loop" confidence="1" gain="-1"/>
+  </hotspot>
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="partial_backward_merge64"
+           is_vectorized="0"
+           self_time="7.199912E-02"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="22"
+           priority="0">
+           <recommendation id="rec_indirect_call_move_c" title="Remove indirect call(s) inside loop" confidence="1" gain="-1"/>
+  </hotspot>
+</IntelParallelAdvisorSummary >

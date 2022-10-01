@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <!DOCTYPE IntelParallelAdvisorSummaryCollection SYSTEM  "IntelParallelAdvisorSummaryCollection.dtd"> -->
+
+<IntelParallelAdvisorSummary version="" 
+                             kind="DATAKIND_SURVEY_EX" >
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="parity_merge64"
+           is_vectorized="0"
+           self_time="2.399942E-01"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="20"
+           priority="0">
+           <recommendation id="rec_indirect_call_move_c" title="Remove indirect call(s) inside loop" confidence="1" gain="-1"/>
+  </hotspot>
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="initialize_rand_mat"
+           is_vectorized="0"
+           self_time="1.940093E-01"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="5"
+           priority="0">
+           <recommendation id="rec_type_conversions_smallest_c" title="Use the smallest data type" confidence="1" gain="-1"/>
+  </hotspot>
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="initialize_rand_mat"
+           is_vectorized="0"
+           self_time="1.940093E-01"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="5"
+           priority="0">
+           <recommendation id="rec_system_functions_move_c" title="Remove system function call(s) inside loop" confidence="1" gain="-1"/>
+  </hotspot>
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="main"
+           is_vectorized="0"
+           self_time="1.099997E-01"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="40"
+           priority="0">
+           <recommendation id="rec_align_loop_c" title="Force the compiler to align loop code" confidence="1" gain="-1"/>
+  </hotspot>
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="compute_single_unweighted_knn_class_shapley"
+           is_vectorized="0"
+           self_time="4.799937E-02"
+           total_time="0.000000E+00"
+           trip_counts=""
+           func_instance="37"
+           priority="0">
+           <recommendation id="rec_type_conversions_smallest_c" title="Use the smallest data type" confidence="1" gain="-1"/>
+  </hotspot>
+</IntelParallelAdvisorSummary >

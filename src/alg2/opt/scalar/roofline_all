@@ -1,0 +1,12 @@
+cd opt1
+./roofline_analysis.sh
+cd ..
+cd opt2
+./roofline_analysis.sh
+cd ..
+cd opt3
+./roofline_analysis.sh
+cd ..
+cd opt4
+./roofline_analysis.sh
+cd ..

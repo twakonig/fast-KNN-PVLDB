@@ -1,0 +1,12 @@
+# callstacks file version: 8
+#    rowid	    parent	       rva	 loop	 system	                                function	binary	instance_start_rva	instance_size	instance_end_rva	finst_rowid	roi	is_inlined	jit_method_id	tripcounts_roi	flops_roi	cachesim_roi	data_transfer_roi	projection_roi
+         1	        -1	      5232	    0	      0	                                  _start	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt5/alg1opt5.out	5232	43	0	1	0	0	0	0	0	0	0	0
+         2	        -1	      5273	    0	      0	                                  _start	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt5/alg1opt5.out	5232	43	0	1	0	0	0	0	0	0	0	0
+         3	         2	    138374	    0	      1	                       __libc_start_main	/lib/x86_64-linux-gnu/libc.so.6	138144	446	0	7	0	0	0	0	0	0	0	0
+         4	         3	      4589	    0	      0	                                    main	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt5/alg1opt5.out	4048	1143	0	2	0	0	0	0	0	0	0	0
+         5	         8	    124867	    1	      0	          [Loop@0x1e780 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt5/alg1opt5.out	124800	300	125100	3	0	0	0	0	0	0	0	0
+         6	         4	    124392	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt5/alg1opt5.out	124080	2591	0	4	0	0	0	0	0	0	0	0
+         7	         6	    124560	    1	      0	          [Loop@0x1e5e8 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt5/alg1opt5.out	124392,126448,126664	1977,209,7	126369	6	0	0	0	0	0	0	0	0
+         8	         7	    124800	    1	      0	          [Loop@0x1e690 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt5/alg1opt5.out	124560,126448	1245,96	125805	5	0	0	0	0	0	0	0	0
+         9	         4	    124867	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt5/alg1opt5.out	124080	2591	0	4	0	0	0	0	0	0	0	0
+        10	        -1	         0	    0	      0	                [Unknown stack frame(s)]	n/a	0	0	0	9	0	0	0	0	0	0	0	0

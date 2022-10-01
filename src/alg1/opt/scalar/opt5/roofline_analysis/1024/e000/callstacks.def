@@ -1,0 +1,77 @@
+# callstacks file version: 8
+#    rowid	    parent	       rva	 loop	 system	                                function	binary	instance_start_rva	instance_size	instance_end_rva	finst_rowid	roi	is_inlined	jit_method_id	tripcounts_roi	flops_roi	cachesim_roi	data_transfer_roi	projection_roi
+         1	        -1	      5216	    0	      0	                                  _start	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	5216	43	0	1	0	0	0	0	0	0	0	0
+         2	        -1	      5257	    0	      0	                                  _start	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	5216	43	0	1	0	0	0	0	0	0	0	0
+         3	         2	    138374	    0	      1	                       __libc_start_main	/lib/x86_64-linux-gnu/libc.so.6	138144	446	0	26	0	0	0	0	0	0	0	0
+         4	         3	      4989	    0	      0	                                    main	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	4080	1128	0	2	0	0	0	0	0	0	0	0
+         5	        37	      7642	    1	      0	    [Loop@0x1da0 in initialize_rand_mat]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	7584	65	7649	3	0	0	0	0	0	0	0	0
+         6	         3	      4624	    0	      0	                                    main	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	4080	1128	0	2	0	0	0	0	0	0	0	0
+         7	        42	     85505	    1	      0	          [Loop@0x14d07 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	85255	276	85531	6	0	0	0	0	0	0	0	0
+         8	        42	     85301	    1	      0	          [Loop@0x14d07 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	85255	276	85531	6	0	0	0	0	0	0	0	0
+         9	        42	     85509	    1	      0	          [Loop@0x14d07 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	85255	276	85531	6	0	0	0	0	0	0	0	0
+        10	        42	     85283	    1	      0	          [Loop@0x14d07 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	85255	276	85531	6	0	0	0	0	0	0	0	0
+        11	        42	     85391	    1	      0	          [Loop@0x14d07 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	85255	276	85531	6	0	0	0	0	0	0	0	0
+        12	        42	     85476	    1	      0	          [Loop@0x14d07 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	85255	276	85531	6	0	0	0	0	0	0	0	0
+        13	        42	     85378	    1	      0	          [Loop@0x14d07 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	85255	276	85531	6	0	0	0	0	0	0	0	0
+        14	        42	     85327	    1	      0	          [Loop@0x14d07 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	85255	276	85531	6	0	0	0	0	0	0	0	0
+        15	        41	     85166	    1	      0	          [Loop@0x14c78 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	85112	436	85548	8	0	0	0	0	0	0	0	0
+        16	        42	     85332	    1	      0	          [Loop@0x14d07 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	85255	276	85531	6	0	0	0	0	0	0	0	0
+        17	        42	     85310	    1	      0	          [Loop@0x14d07 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	85255	276	85531	6	0	0	0	0	0	0	0	0
+        18	        42	     85320	    1	      0	          [Loop@0x14d07 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	85255	276	85531	6	0	0	0	0	0	0	0	0
+        19	        41	     85172	    1	      0	          [Loop@0x14c78 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	85112	436	85548	8	0	0	0	0	0	0	0	0
+        20	        42	     85492	    1	      0	          [Loop@0x14d07 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	85255	276	85531	6	0	0	0	0	0	0	0	0
+        21	        42	     85482	    1	      0	          [Loop@0x14d07 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	85255	276	85531	6	0	0	0	0	0	0	0	0
+        22	        42	     85406	    1	      0	          [Loop@0x14d07 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	85255	276	85531	6	0	0	0	0	0	0	0	0
+        23	        42	     85463	    1	      0	          [Loop@0x14d07 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	85255	276	85531	6	0	0	0	0	0	0	0	0
+        24	        60	     85732	    1	      0	          [Loop@0x14e8c in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	85644,85828	149,30	85793	11	0	0	0	0	0	0	0	0
+        25	        24	     65993	    0	      0	                              quadsort64	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	65792	631	0	12	0	0	0	0	0	0	0	0
+        26	        63	     60027	    1	      0	           [Loop@0xe8a0 in quad_merge64]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	59552,59984,60296	152,49,29	59704	13	0	0	0	0	0	0	0	0
+        27	        65	     53939	    1	      0	         [Loop@0xd270 in parity_merge64]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	53872	134	54006	16	0	0	0	0	0	0	0	0
+        28	        27	      5516	    0	      0	                                     cmp	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	5488	29	0	18	0	0	0	0	0	0	0	0
+        29	        65	     53964	    1	      0	         [Loop@0xd270 in parity_merge64]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	53872	134	54006	16	0	0	0	0	0	0	0	0
+        30	        68	     60144	    1	      0	           [Loop@0xead0 in quad_merge64]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	60112,60382	180,21	60359	19	0	0	0	0	0	0	0	0
+        31	        71	     59043	    1	      0	[Loop@0xe63c in partial_backward_merge64]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	58940	174	59114,59288,59320,59114	20	0	0	0	0	0	0	0	0
+        32	        31	      5514	    0	      0	                                     cmp	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	5488	29	0	18	0	0	0	0	0	0	0	0
+        33	        24	     65853	    0	      0	                              quadsort64	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	65792	631	0	12	0	0	0	0	0	0	0	0
+        34	        73	     61030	    1	      0	            [Loop@0xed90 in quad_swap64]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	60816,61016	82,28	60898,61044	23	0	0	0	0	0	0	0	0
+        35	        34	     56437	    0	      0	                parity_tail_swap_eight64	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	55488	959	0	25	0	0	0	0	0	0	0	0
+        36	         4	      7576	    0	      0	                     initialize_rand_mat	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	7552	115	0	4	0	0	0	0	0	0	0	0
+        37	        36	      7584	    1	      0	    [Loop@0x1d98 in initialize_rand_mat]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	7576	84	7660	5	0	0	0	0	0	0	0	0
+        38	         4	      7642	    0	      0	                     initialize_rand_mat	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	7552	115	0	4	0	0	0	0	0	0	0	0
+        39	         6	     84980	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	84592	1266	0	7	0	0	0	0	0	0	0	0
+        40	        39	     85056	    1	      0	          [Loop@0x14bf4 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	84980	639	85619	10	0	0	0	0	0	0	0	0
+        41	        40	     85112	    1	      0	          [Loop@0x14c40 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	85056	528	85584	9	0	0	0	0	0	0	0	0
+        42	        41	     85255	    1	      0	          [Loop@0x14c78 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	85112	436	85548	8	0	0	0	0	0	0	0	0
+        43	         6	     85505	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	84592	1266	0	7	0	0	0	0	0	0	0	0
+        44	         6	     85301	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	84592	1266	0	7	0	0	0	0	0	0	0	0
+        45	         6	     85509	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	84592	1266	0	7	0	0	0	0	0	0	0	0
+        46	         6	     85283	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	84592	1266	0	7	0	0	0	0	0	0	0	0
+        47	         6	     85391	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	84592	1266	0	7	0	0	0	0	0	0	0	0
+        48	         6	     85476	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	84592	1266	0	7	0	0	0	0	0	0	0	0
+        49	         6	     85378	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	84592	1266	0	7	0	0	0	0	0	0	0	0
+        50	         6	     85327	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	84592	1266	0	7	0	0	0	0	0	0	0	0
+        51	         6	     85166	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	84592	1266	0	7	0	0	0	0	0	0	0	0
+        52	         6	     85332	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	84592	1266	0	7	0	0	0	0	0	0	0	0
+        53	         6	     85310	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	84592	1266	0	7	0	0	0	0	0	0	0	0
+        54	         6	     85320	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	84592	1266	0	7	0	0	0	0	0	0	0	0
+        55	         6	     85172	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	84592	1266	0	7	0	0	0	0	0	0	0	0
+        56	         6	     85492	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	84592	1266	0	7	0	0	0	0	0	0	0	0
+        57	         6	     85482	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	84592	1266	0	7	0	0	0	0	0	0	0	0
+        58	         6	     85406	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	84592	1266	0	7	0	0	0	0	0	0	0	0
+        59	         6	     85463	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	84592	1266	0	7	0	0	0	0	0	0	0	0
+        60	         6	     85644	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	84592	1266	0	7	0	0	0	0	0	0	0	0
+        61	         6	     85732	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	84592	1266	0	7	0	0	0	0	0	0	0	0
+        62	        25	     59456	    0	      0	                            quad_merge64	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	59360	1043	0	14	0	0	0	0	0	0	0	0
+        63	        62	     59552	    1	      0	           [Loop@0xe840 in quad_merge64]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	59456,59760,59984,60040,60296,60328	294,217,49,22,29,31	60062	15	0	0	0	0	0	0	0	0
+        64	        25	     60027	    0	      0	                            quad_merge64	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	59360	1043	0	14	0	0	0	0	0	0	0	0
+        65	        26	     53872	    0	      0	                          parity_merge64	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	53760	359	0	17	0	0	0	0	0	0	0	0
+        66	        26	     53939	    0	      0	                          parity_merge64	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	53760	359	0	17	0	0	0	0	0	0	0	0
+        67	        26	     53964	    0	      0	                          parity_merge64	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	53760	359	0	17	0	0	0	0	0	0	0	0
+        68	        25	     60112	    0	      0	                            quad_merge64	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	59360	1043	0	14	0	0	0	0	0	0	0	0
+        69	        25	     60144	    0	      0	                            quad_merge64	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	59360	1043	0	14	0	0	0	0	0	0	0	0
+        70	        30	     58929	    0	      0	                partial_backward_merge64	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	58800	548	0	21	0	0	0	0	0	0	0	0
+        71	        70	     58940	    1	      0	[Loop@0xe631 in partial_backward_merge64]	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	58929,59288,59320	185,29,28	59114	22	0	0	0	0	0	0	0	0
+        72	        30	     59043	    0	      0	                partial_backward_merge64	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	58800	548	0	21	0	0	0	0	0	0	0	0
+        73	        33	     60816	    0	      0	                             quad_swap64	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	60736	2865	0	24	0	0	0	0	0	0	0	0
+        74	        33	     61030	    0	      0	                             quad_swap64	/home/stefan/git/asl/team36/src/alg1/opt/scalar/opt5/alg1opt5.out	60736	2865	0	24	0	0	0	0	0	0	0	0
+        75	        -1	         0	    0	      0	                [Unknown stack frame(s)]	n/a	0	0	0	28	0	0	0	0	0	0	0	0

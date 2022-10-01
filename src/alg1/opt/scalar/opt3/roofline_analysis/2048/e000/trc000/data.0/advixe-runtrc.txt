@@ -1,0 +1,10 @@
+
+=== Start: [2022/06/19 09:26:48] === 
+Peak bandwidth measurement started...
+Peak bandwidth measurement finished.
+Analysis started...
+Result file: /home/stefan/git/asl/team36/src/alg1/opt/scalar/opt3/roofline_analysis/2048/e000/trc000/trc000.advixe 
+Application exit code: 0 
+Result file: /home/stefan/git/asl/team36/src/alg1/opt/scalar/opt3/roofline_analysis/2048/e000/trc000/trc000.advixe 
+Analysis completed
+=== End: [2022/06/19 09:29:19] === 

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <!DOCTYPE IntelParallelAdvisorSummaryCollection SYSTEM  "IntelParallelAdvisorSummaryCollection.dtd"> -->
+
+<IntelParallelAdvisorSummary version="" 
+                             kind="DATAKIND_SURVEY_EX" >
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="get_true_knn"
+           is_vectorized="1"
+           self_time="3.519903E-01"
+           total_time="3.519903E-01"
+           trip_counts=""
+           func_instance="7"
+           priority="0"/>
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="initialize_rand_mat"
+           is_vectorized="0"
+           self_time="3.999484E-02"
+           total_time="5.999573E-02"
+           trip_counts=""
+           func_instance="4"
+           priority="0"/>
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="parity_merge64"
+           is_vectorized="0"
+           self_time="3.601116E-02"
+           total_time="6.401436E-02"
+           trip_counts=""
+           func_instance="15"
+           priority="0"/>
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="compute_single_unweighted_knn_class_shapley"
+           is_vectorized="0"
+           self_time="1.200172E-02"
+           total_time="1.200172E-02"
+           trip_counts=""
+           func_instance="24"
+           priority="0"/>
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="quad_swap64"
+           is_vectorized="0"
+           self_time="1.199976E-02"
+           total_time="1.199976E-02"
+           trip_counts=""
+           func_instance="23"
+           priority="0"/>
+</IntelParallelAdvisorSummary >

@@ -1,0 +1,22 @@
+# callstacks file version: 8
+#    rowid	    parent	       rva	 loop	 system	                                function	binary	instance_start_rva	instance_size	instance_end_rva	finst_rowid	roi	is_inlined	jit_method_id	tripcounts_roi	flops_roi	cachesim_roi	data_transfer_roi	projection_roi
+         1	        -1	      5312	    0	      0	                                  _start	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	5312	43	0	1	0	0	0	0	0	0	0	0
+         2	        -1	      5353	    0	      0	                                  _start	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	5312	43	0	1	0	0	0	0	0	0	0	0
+         3	         2	    138374	    0	      1	                       __libc_start_main	/lib/x86_64-linux-gnu/libc.so.6	138144	446	0	12	0	0	0	0	0	0	0	0
+         4	         3	      4669	    0	      0	                                    main	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	4128	1143	0	2	0	0	0	0	0	0	0	0
+         5	        14	    135015	    1	      0	          [Loop@0x20f60 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	135008	43	135051	3	0	0	0	0	0	0	0	0
+         6	        14	    135026	    1	      0	          [Loop@0x20f60 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	135008	43	135051	3	0	0	0	0	0	0	0	0
+         7	        12	    135229	    1	      0	          [Loop@0x20978 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	133496,135952,136008,136024,136040,136056,136072,136088,136224	2409,51,10,10,11,10,10,128,85	135905	6	0	0	0	0	0	0	0	0
+         8	         7	    106237	    0	      0	                              quadsort64	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	106176	631	0	7	0	0	0	0	0	0	0	0
+         9	        18	     96185	    1	      0	           [Loop@0x176d8 in quad_swap64]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	95960,96163	92,37	96052,96200	8	0	0	0	0	0	0	0	0
+        10	         9	     83981	    0	      0	                parity_tail_swap_eight64	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	83264	1038	0	10	0	0	0	0	0	0	0	0
+        11	        10	      5610	    0	      0	                                     cmp	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	5584	29	0	11	0	0	0	0	0	0	0	0
+        12	         4	    133496	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	133184	3130	0	4	0	0	0	0	0	0	0	0
+        13	        12	    133936	    1	      0	          [Loop@0x20978 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	133496,135952,136008,136024,136040,136056,136072,136088,136224	2409,51,10,10,11,10,10,128,85	135905	6	0	0	0	0	0	0	0	0
+        14	        13	    135008	    1	      0	          [Loop@0x20b30 in get_true_knn]	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	133936,135952,136008,136024,136040,136056,136072,136088,136165,136224,136252,136299	1255,51,10,10,11,10,10,45,10,20,30,10	135191	5	0	0	0	0	0	0	0	0
+        15	         4	    135015	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	133184	3130	0	4	0	0	0	0	0	0	0	0
+        16	         4	    135026	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	133184	3130	0	4	0	0	0	0	0	0	0	0
+        17	         4	    135229	    0	      0	                            get_true_knn	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	133184	3130	0	4	0	0	0	0	0	0	0	0
+        18	         8	     95960	    0	      0	                             quad_swap64	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	95856	6288	0	9	0	0	0	0	0	0	0	0
+        19	         8	     96185	    0	      0	                             quad_swap64	/home/stefan/git/asl/team36/src/alg1/opt/vectorized/opt2/alg1opt2.out	95856	6288	0	9	0	0	0	0	0	0	0	0
+        20	        -1	         0	    0	      0	                [Unknown stack frame(s)]	n/a	0	0	0	14	0	0	0	0	0	0	0	0
