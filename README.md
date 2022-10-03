@@ -1,8 +1,8 @@
-This project was done as part of the Advanced Systems Lab course at ETH in 2021.The original repository can be found [here](https://gitlab.inf.ethz.ch/COURSE-ASL/asl22/team36). To see contributions check the final report on the repo.
-
 # FAST COMPUTATION OF SHAPLEY VALUES FOR NEAREST NEIGHBOR ALGORITHMS
 
-_Stefan Jokić, Lucas Cosier, Theresa Wakonig, Olivier Becker_
+[_Stefan Jokić_](https://github.com/sjokic), [_Lucas Cosier_](https://github.com/luke-ck), _Theresa Wakonig_, _Olivier Becker_
+
+This project was done as part of the Advanced Systems Lab course at ETH in 2021. To see contributions, take a look at the final report `36_report.pdf`.
 
 This repository contains fast C implementations of algorithms for the computation of Shapley values (SV) in the context of k-NN classifiers. In particular, the baseline implementations as well as optimized versions (both scalar and SIMD using AVX2 intrinsics) of the following two algorithms presented in the PVLDB paper ["Efficient task-specific data valuation for nearest neighbor algorithms" by R. Jia et al.](https://arxiv.org/abs/1908.08619) are included:
 
