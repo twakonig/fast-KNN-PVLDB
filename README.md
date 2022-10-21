@@ -1,6 +1,6 @@
 # FAST COMPUTATION OF SHAPLEY VALUES FOR NEAREST NEIGHBOR ALGORITHMS
 
-[_Stefan Jokić_](https://github.com/sjokic), [_Lucas Cosier_](https://github.com/luke-ck), _Theresa Wakonig_, _Olivier Becker_
+[_Stefan Jokić_](https://github.com/sjokic), [_Lucas Cosier_](https://github.com/luke-ck), [_Theresa Wakonig_](https://github.com/twakonig), [_Olivier Becker_](https://github.com/olibeck)
 
 This project was done as part of the Advanced Systems Lab course at ETH in 2021. To see contributions, take a look at the final report `36_report.pdf`.
 
